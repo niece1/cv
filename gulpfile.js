@@ -23,7 +23,8 @@ function watchFiles() {
   });
 
   gulp.watch('./sass/**/*.scss', preprocess);
-  gulp.watch('./**/*.php', browserSync.reload);
+//  gulp.watch("./js/**/*.js, css);
+  gulp.watch('*.php', browserSync.reload);
 };
 gulp.task('watchFiles', watchFiles);
 

@@ -20,26 +20,37 @@
 
  h1 {
 	font-size: 6rem;
+  font-family: 'Roboto', sans-serif;
 }
 
  h2 {
 	font-size: 5rem;
+  font-family: 'Roboto', sans-serif;
 }
 
  h3 {
   font-size: 4rem;
+  font-family: 'Roboto', sans-serif;
 }
 
  h4 {
   font-size: 3rem;
+  font-family: 'Roboto', sans-serif;
 }
 
  h5 {
   font-size: 2.5rem;
+  font-family: 'Roboto', sans-serif;
 }
 
  h6 {
   font-size: 1.8rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  font-size: 1.6rem;
+  font-family: 'Rubik', sans-serif;
 }
 
  a {
@@ -50,6 +61,7 @@
    color: rgb(17, 50, 93) !important;
    font-size: 4.5rem;
    padding-left: 30px;
+   font-family: 'Shrikhand', cursive;
  }
 
  nav {
@@ -64,16 +76,12 @@
    }
  }
 
-
-
  #mainNav {
-
   background-color: #fff;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
@@ -117,26 +125,27 @@
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-    color: #fff;
+    color: red;
   }
   #mainNav.navbar-shrink {
-    border-bottom: 1px solid red;
-    background-color: #1b1a1a;
+//    border-bottom: 1px solid red;
+    background-color: #fff;
      padding-top: 0 !important;
   }
   #mainNav.navbar-shrink .navbar-brand {
-    color: red;
+    color: #fff !important;
   }
   #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
-    color: red;
+    color: red !important;
+    transition: all 0.5s ease-in-out;
   }
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
-    color: #212529;
+    color: #fff;
   }
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-    color: #F05F40;
+    color: #fff;
   }
 }
 
@@ -156,8 +165,6 @@
         width: 100%;
         display: block;
         height: 100%;
-
-
         overflow: hidden;
       }
       figcaption {
@@ -168,15 +175,51 @@
         text-align: center;
         h2 {
           color: #fff;
-
         }
         h6 {
           color: rgb(17, 50, 93);
-
         }
         button {
-          margin-top: 10px;
+          margin: 15px 3px 0 3px;
+          font-size: 2rem;
+          color: #ffefa7;
+          background: transparent;
+          border: 1px solid #ffefa7;
+          border-radius: 3px;
+          padding: 8px 14px;
+          &:hover {
+            color: rgb(17, 50, 93);
+            background-color: #ffefa7;
+            transition: all 0.5s ease-in-out;
+            cursor: pointer;
+          }
+          &:focus {
+            color: rgb(17, 50, 93);
+            background-color: #ffefa7;
+            transition: all 0.5s ease-in-out;
+            cursor: pointer;
+            outline: none;
+          }
         }
       }
     }
+ }
+
+ // Advantages section Slick slider stylesheet
+ #section2 {
+   width: 100%;
+   min-height: 500px;
+   .introadvantages {
+     text-align: center;
+   }
+   .advantages-wrapper {
+     width: 80%;
+     margin: auto;
+     .advantage_item {
+       text-align: center;
+       img {
+         text-align: center;
+       }
+     }
+   }
  }
