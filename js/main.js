@@ -38,35 +38,20 @@
    {
      breakpoint: 1000,
      settings: {
-       slidesToShow: 5,
-       slidesToScroll: 1,
-       infinite: true,
-
-     }
-   },
-   {
-     breakpoint: 800,
-     settings: {
-       slidesToShow: 4,
-       slidesToScroll: 1
-     }
-   },
-   {
-     breakpoint: 650,
-     settings: {
-       slidesToShow: 3,
-       slidesToScroll: 1
-     }
-   },
-   {
-     breakpoint: 450,
-     settings: {
        slidesToShow: 2,
        slidesToScroll: 1,
        infinite: true,
 
      }
    },
+   {
+     breakpoint: 650,
+     settings: {
+       slidesToShow: 1,
+       slidesToScroll: 1
+     }
+   }
+
    // You can unslick at a given breakpoint now by adding:
    // settings: "unslick"
    // instead of a settings object
@@ -74,7 +59,16 @@
 
 });
 
-
+// Skillbar animation
+$(document).on('scroll', function(){
+    if($('html,body').scrollTop() > $('#skills').height()){
+  $(".skillbar").each(function(){
+			$(this).find(".skillbar-bar").animate({
+				width:$(this).attr("data-percent")
+			},3000);
+		});
+  }
+});
 
 
 

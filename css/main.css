@@ -44,7 +44,7 @@ h5 {
 }
 
 h6 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -221,11 +221,19 @@ ul.navbar-nav {
 
 #section2 {
   width: 100%;
-  min-height: 500px;
+  min-height: 450px;
 }
 
 #section2 .introadvantages {
   text-align: center;
+}
+
+#section2 .introadvantages h3 {
+  margin: 50px 0 10px 0;
+}
+
+#section2 .introadvantages p {
+  margin: 10px 0 70px 0;
 }
 
 #section2 .advantages-wrapper {
@@ -235,8 +243,86 @@ ul.navbar-nav {
 
 #section2 .advantages-wrapper .advantage_item {
   text-align: center;
+  margin: 0 10px;
 }
 
 #section2 .advantages-wrapper .advantage_item img {
-  text-align: center;
+  margin: auto;
+}
+
+#section3 {
+  min-height: 500px;
+}
+
+#section3 .row .col-md-6 {
+  padding: 0;
+}
+
+#section3 .row .col-md-6 img {
+  width: 100%;
+  height: auto;
+}
+
+#section3 .row .col-md-6 .skillbar-wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+#section3 .row .col-md-6 .skillbar-wrapper h4 {
+  padding: 20px 0;
+}
+
+#section3 .row .col-md-6 .skillbar-wrapper .skillbar {
+  position: relative;
+  display: block;
+  margin-bottom: 15px;
+  width: auto;
+  background: #59c383;
+  height: 30px;
+  border-radius: 3px;
+  -webkit-transition: 0.4s linear;
+  -o-transition: 0.4s linear;
+  transition: 0.4s linear;
+  -webkit-transition-property: width, background-color;
+  -o-transition-property: width, background-color;
+  transition-property: width, background-color;
+}
+
+#section3 .row .col-md-6 .skillbar-wrapper .skillbar-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110px;
+  font-weight: bold;
+  font-size: 13px;
+  color: #fff;
+  background: #6adcfa;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+#section3 .row .col-md-6 .skillbar-wrapper .skillbar-title span {
+  display: block;
+  background: rgba(0, 0, 0, 0.15);
+  padding: 0 20px;
+  height: 30px;
+  line-height: 30px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+#section3 .row .col-md-6 .skillbar-wrapper .skillbar-bar {
+  height: 30px;
+  width: 0px;
+  border-radius: 3px;
+}
+
+#section3 .row .col-md-6 .skillbar-wrapper .skill-bar-percent {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-size: 11px;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
 }
