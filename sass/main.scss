@@ -300,3 +300,35 @@ p {
      }
    }
  }
+
+ // Portfolio Section stylesheet
+
+ #section4 {
+   width: 100%;
+   h3 {
+     text-align: center;
+     margin: 50px 0 0 0;
+   }
+   .button_group {
+     text-align: center !important;
+     width: 100%;
+     margin: 30px auto !important;
+   }
+   .portfolio_container {
+     width: 100%;
+     margin: auto;
+     .portfolio_item {
+       width: 25%;
+       @media only screen and (max-width: 900px) {
+         width: 50%;
+       }
+       @media only screen and (max-width: 600px) {
+         width: 100%;
+       }
+       img {
+         width: 100%;
+         height: auto;
+       }
+     }
+   }
+ }

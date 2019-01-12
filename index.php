@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Serif|Roboto|Rubik|Shrikhand" rel="stylesheet">
   <link rel="stylesheet" href="slick/slick.css">
   <link rel="stylesheet" href="slick/slick-theme.css">
+  
   <link rel="stylesheet" href="css/main.css">
 
   <title>Hello, world!</title>
@@ -172,11 +173,69 @@
 
   </section>
 
-  <div id="section4" class="container-fluid bg-danger" style="padding-top:70px;padding-bottom:70px;height:800px";>
-    <h1>Section 4 Submenu 1</h1>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <div id="section4" >
+
+    <h3>Recent works</h3>
+    <div class="button_group btn-group-lg filter_button_group">
+  <button class="button btn btn-success is-checked" data-filter="*">All projects</button>
+  <button class="button btn btn-success" data-filter=".metal">Development</button>
+  <button class="button btn btn-success" data-filter=".transition">Design</button>
+  <button class="button btn btn-success" data-filter=".alkali">Marketing</button>
+
+
+</div>
+    <div class="portfolio_container" >
+
+      <div class="portfolio_item metal">
+        <a href="img/board.jpg" class="swipebox" rel="gallery-1">
+        <img src="img/board.jpg" alt="board">
+      </a>
+      </div>
+
+
+
+      <div class="portfolio_item alkali">
+        <a href="img/board.jpg" class="swipebox" rel="gallery-1">
+        <img src="img/board.jpg" alt="board">
+        </a>
+      </div>
+
+
+      <div class="portfolio_item metal">
+        <a href="img/board.jpg" class="swipebox" rel="gallery-1">
+        <img src="img/board.jpg" alt="board">
+        </a>
+      </div>
+
+
+      <div class="portfolio_item transition">
+<a href="img/board.jpg" class="swipebox" rel="gallery-1">
+        <img src="img/board.jpg" alt="board">
+        </a>
+      </div>
+
+
+      <div class="portfolio_item alkali">
+        <img src="img/board.jpg" alt="board">
+      </div>
+
+
+      <div class="portfolio_item transition">
+        <img src="img/board.jpg" alt="board">
+      </div>
+
+      <div class="portfolio_item alkali">
+        <img src="img/board.jpg" alt="board">
+      </div>
+
+
+      <div class="portfolio_item transition">
+        <img src="img/board.jpg" alt="board">
+      </div>
+
+    </div>
   </div>
+
   <div id="section5" class="container-fluid bg-info" style="padding-top:70px;padding-bottom:70px;height:800px">
     <h1>Section 4 Submenu 2</h1>
     <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
@@ -187,8 +246,10 @@
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
   <script src="slick/slick.js"></script>
+
   <script type="text/javascript" src="js/main.js">
 
   </script>

@@ -326,3 +326,44 @@ ul.navbar-nav {
   line-height: 30px;
   color: #fff;
 }
+
+#section4 {
+  width: 100%;
+}
+
+#section4 h3 {
+  text-align: center;
+  margin: 50px 0 0 0;
+}
+
+#section4 .button_group {
+  text-align: center !important;
+  width: 100%;
+  margin: 30px auto !important;
+}
+
+#section4 .portfolio_container {
+  width: 100%;
+  margin: auto;
+}
+
+#section4 .portfolio_container .portfolio_item {
+  width: 25%;
+}
+
+@media only screen and (max-width: 900px) {
+  #section4 .portfolio_container .portfolio_item {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #section4 .portfolio_container .portfolio_item {
+    width: 100%;
+  }
+}
+
+#section4 .portfolio_container .portfolio_item img {
+  width: 100%;
+  height: auto;
+}

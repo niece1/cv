@@ -1,5 +1,4 @@
-(function($) {
-  "use strict"; // Start of use strict
+$( document ).ready( function() {
 
 
 
@@ -70,6 +69,16 @@ $(document).on('scroll', function(){
   }
 });
 
+var $grid = $('.portfolio_container').isotope({
+  itemSelector: '.portfolio_item',
+  stagger: 30
+});
+
+$('.filter_button_group').on( 'click', '.button', function() {
+  var filterValue = $(this).attr('data-filter');
+  $grid.isotope({ filter: filterValue });
+});
 
 
-})(jQuery); // End of use strict
+
+}); // End of use strict
