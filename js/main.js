@@ -50,10 +50,6 @@ $( document ).ready( function() {
        slidesToScroll: 1
      }
    }
-
-   // You can unslick at a given breakpoint now by adding:
-   // settings: "unslick"
-   // instead of a settings object
  ]
 
 });
@@ -79,6 +75,25 @@ $('.filter_button_group').on( 'click', '.button', function() {
   $grid.isotope({ filter: filterValue });
 });
 
+});
 
+// Modal images
+var modal = document.getElementById('portfolioModal');
+var span = $(".close");
 
-}); // End of use strict
+span.on("click", function() {
+    modal.style.display = "none";
+});
+
+var images = document.getElementsByTagName("img");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+var i;
+for (i = 0; i < images.length; i++) {
+  images[i].onclick = function() {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+  };
+}

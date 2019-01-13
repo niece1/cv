@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Serif|Roboto|Rubik|Shrikhand" rel="stylesheet">
   <link rel="stylesheet" href="slick/slick.css">
   <link rel="stylesheet" href="slick/slick-theme.css">
-  
+
   <link rel="stylesheet" href="css/main.css">
 
   <title>Hello, world!</title>
@@ -187,31 +187,22 @@
     <div class="portfolio_container" >
 
       <div class="portfolio_item metal">
-        <a href="img/board.jpg" class="swipebox" rel="gallery-1">
         <img src="img/board.jpg" alt="board">
-      </a>
       </div>
 
 
-
       <div class="portfolio_item alkali">
-        <a href="img/board.jpg" class="swipebox" rel="gallery-1">
         <img src="img/board.jpg" alt="board">
-        </a>
       </div>
 
 
       <div class="portfolio_item metal">
-        <a href="img/board.jpg" class="swipebox" rel="gallery-1">
         <img src="img/board.jpg" alt="board">
-        </a>
       </div>
 
 
       <div class="portfolio_item transition">
-<a href="img/board.jpg" class="swipebox" rel="gallery-1">
         <img src="img/board.jpg" alt="board">
-        </a>
       </div>
 
 
@@ -225,7 +216,7 @@
       </div>
 
       <div class="portfolio_item alkali">
-        <img src="img/board.jpg" alt="board">
+        <img src="img/board.jpg" alt="laptop">
       </div>
 
 
@@ -235,6 +226,13 @@
 
     </div>
   </div>
+
+  <!-- The Modal -->
+<div id="portfolioModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
 
   <div id="section5" class="container-fluid bg-info" style="padding-top:70px;padding-bottom:70px;height:800px">
     <h1>Section 4 Submenu 2</h1>
