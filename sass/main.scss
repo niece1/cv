@@ -312,7 +312,7 @@ p {
    .button_group {
      text-align: center !important;
      width: 100%;
-     margin: 30px auto !important;
+     margin: 20px auto 50px auto !important;
    }
    .portfolio_container {
      width: 100%;
@@ -328,7 +328,7 @@ p {
        img {
          width: 100%;
          height: auto;
-         cursor: pointer;
+         cursor: crosshair;
        }
      }
    }
@@ -393,4 +393,36 @@ p {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
+}
+
+// Testimonials Section stylesheet
+
+#section5 {
+  width: 100%;
+  height: 400px;
+  .testimonials_wrapper {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    h3 {
+      margin: 50px 0 15px 0;
+    }
+    h6 {
+      margin: 0 0 40px 0;
+    }
+    .testimonials_holder {
+      width: 100%;
+      .testimonial_item{
+        width: 100%;
+        img {
+          width: 15%;
+          border-radius: 50%;
+          border: 4px solid #59c383;
+        }
+        p {
+          margin: 20px 0 20px 0;
+        }
+      }
+    }
+  }
 }

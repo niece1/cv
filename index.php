@@ -49,10 +49,10 @@
   </nav>
 
 
-    <section id="section1"  class="parallax">
+  <section id="section1"  class="parallax">
 
-      <figure>
-        <img src="img/denim.jpg" alt="green">
+    <figure>
+      <img src="img/denim.jpg" alt="green">
 
       <figcaption>
         <h2>Alonso Media. Deserve a better disign</h2>
@@ -60,50 +60,50 @@
         <button type="button" name="button" class="button">Contact us</button>
         <button type="button" name="button" class="button">Contact us</button>
       </figcaption>
-      </figure>
+    </figure>
 
     <!-- /.parallax -->
-	</section>
+  </section>
 
   <section id="section2" class="container-fluid">
     <div class="introadvantages">
-     <h3>Create better with Alonso</h3>
-     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quas aspernatur libero sint ratione facilis iste et! Eligendi, nesciunt, cumque?</p>
-     </div>
+      <h3>Create better with Alonso</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quas aspernatur libero sint ratione facilis iste et! Eligendi, nesciunt, cumque?</p>
+    </div>
 
-     <div class="advantages-wrapper">
+    <div class="advantages-wrapper">
 
-       <div class="advantage_item">
-         <img src="img/devices.png" alt="devices">
-         <h6>Responsive design</h6>
-         <p>We focus on your journey as well as your destination caring about you, your team and your business.</p>
-       </div>
+      <div class="advantage_item">
+        <img src="img/devices.png" alt="devices">
+        <h6>Responsive design</h6>
+        <p>We focus on your journey as well as your destination caring about you, your team and your business.</p>
+      </div>
 
-       <div class="advantage_item">
-         <img src="img/gears.png" alt="devices">
-         <h6>Responsive design</h6>
-         <p>We focus on your journey as well as your destination caring about you, your team and your business.</p>
-       </div>
+      <div class="advantage_item">
+        <img src="img/gears.png" alt="devices">
+        <h6>Responsive design</h6>
+        <p>We focus on your journey as well as your destination caring about you, your team and your business.</p>
+      </div>
 
-       <div class="advantage_item">
-         <img src="img/edit.png" alt="devices">
-         <h6>Responsive design</h6>
-         <p>We focus on your journey as well as your destination caring about you, your team and your business.</p>
-       </div>
+      <div class="advantage_item">
+        <img src="img/edit.png" alt="devices">
+        <h6>Responsive design</h6>
+        <p>We focus on your journey as well as your destination caring about you, your team and your business.</p>
+      </div>
 
-       <div class="advantage_item">
-         <img src="img/tools.png" alt="devices">
-         <h6>Responsive design</h6>
-         <p>We focus on your journey as well as your destination caring about you, your team and your business.</p>
-       </div>
+      <div class="advantage_item">
+        <img src="img/tools.png" alt="devices">
+        <h6>Responsive design</h6>
+        <p>We focus on your journey as well as your destination caring about you, your team and your business.</p>
+      </div>
 
-       <div class="advantage_item">
-         <img src="img/layers.png" alt="devices">
-         <h6>Responsive design</h6>
-         <p>We focus on your journey as well as your destination caring about you, your team and your business.</p>
-       </div>
+      <div class="advantage_item">
+        <img src="img/layers.png" alt="devices">
+        <h6>Responsive design</h6>
+        <p>We focus on your journey as well as your destination caring about you, your team and your business.</p>
+      </div>
 
-     </div>
+    </div>
   </section>
 
   <section id="section3" class="container-fluid">
@@ -114,59 +114,59 @@
 
       <div class="col-md-6 ">
         <!-- SKILLS -->
-<div id="skills" class="skillbar-wrapper">
-  <h4>Skills & Expertise</h4>
-	<div class="skillbar" data-percent="70%">
-		<div class="skillbar-title" style="background: #DD1E2F;"><span>HTML</span></div>
-		<div class="skillbar-bar" style="background: #DD1E2F;"></div>
-		<div class="skill-bar-percent">70%</div>
-	</div> <!-- Ende Skill Bar -->
+        <div id="skills" class="skillbar-wrapper">
+          <h4>Skills & Expertise</h4>
+          <div class="skillbar" data-percent="70%">
+            <div class="skillbar-title" style="background: #DD1E2F;"><span>HTML</span></div>
+            <div class="skillbar-bar" style="background: #DD1E2F;"></div>
+            <div class="skill-bar-percent">70%</div>
+          </div> <!-- Ende Skill Bar -->
 
-	<div class="skillbar" data-percent="55%">
-		<div class="skillbar-title" style="background: #EBB035;"><span>CSS</span></div>
-		<div class="skillbar-bar" style="background: #EBB035;"></div>
-		<div class="skill-bar-percent">55%</div>
-	</div> <!-- Ende Skill Bar -->
+          <div class="skillbar" data-percent="55%">
+            <div class="skillbar-title" style="background: #EBB035;"><span>CSS</span></div>
+            <div class="skillbar-bar" style="background: #EBB035;"></div>
+            <div class="skill-bar-percent">55%</div>
+          </div> <!-- Ende Skill Bar -->
 
-	<div class="skillbar" data-percent="60%">
-		<div class="skillbar-title" style="background: #06A2CB;"><span>Java Script</span></div>
-		<div class="skillbar-bar" style="background: #06A2CB;"></div>
-		<div class="skill-bar-percent">60%</div>
-	</div> <!-- Ende Skill Bar -->
+          <div class="skillbar" data-percent="60%">
+            <div class="skillbar-title" style="background: #06A2CB;"><span>Java Script</span></div>
+            <div class="skillbar-bar" style="background: #06A2CB;"></div>
+            <div class="skill-bar-percent">60%</div>
+          </div> <!-- Ende Skill Bar -->
 
-	<div class="skillbar" data-percent="55%">
-		<div class="skillbar-title" style="background: #218559;"><span>jQuery</span></div>
-		<div class="skillbar-bar" style="background: #218559;"></div>
-		<div class="skill-bar-percent">55%</div>
-	</div> <!-- Ende Skill Bar -->
+          <div class="skillbar" data-percent="55%">
+            <div class="skillbar-title" style="background: #218559;"><span>jQuery</span></div>
+            <div class="skillbar-bar" style="background: #218559;"></div>
+            <div class="skill-bar-percent">55%</div>
+          </div> <!-- Ende Skill Bar -->
 
-	<div class="skillbar" data-percent="80%">
-		<div class="skillbar-title" style="background: #D0C6B1;"><span>Bootstrap</span></div>
-		<div class="skillbar-bar" style="background: #D0C6B1;"></div>
-		<div class="skill-bar-percent">80%</div>
-	</div> <!-- Ende Skill Bar -->
+          <div class="skillbar" data-percent="80%">
+            <div class="skillbar-title" style="background: #D0C6B1;"><span>Bootstrap</span></div>
+            <div class="skillbar-bar" style="background: #D0C6B1;"></div>
+            <div class="skill-bar-percent">80%</div>
+          </div> <!-- Ende Skill Bar -->
 
-  <div class="skillbar" data-percent="80%">
-		<div class="skillbar-title" style="background: #D0C6B1;"><span>Bootstrap</span></div>
-		<div class="skillbar-bar" style="background: #D0C6B1;"></div>
-		<div class="skill-bar-percent">80%</div>
-	</div> <!-- Ende Skill Bar -->
+          <div class="skillbar" data-percent="80%">
+            <div class="skillbar-title" style="background: #D0C6B1;"><span>Bootstrap</span></div>
+            <div class="skillbar-bar" style="background: #D0C6B1;"></div>
+            <div class="skill-bar-percent">80%</div>
+          </div> <!-- Ende Skill Bar -->
 
-  <div class="skillbar" data-percent="80%">
-		<div class="skillbar-title" style="background: #D0C6B1;"><span>Bootstrap</span></div>
-		<div class="skillbar-bar" style="background: #D0C6B1;"></div>
-		<div class="skill-bar-percent">80%</div>
-	</div> <!-- Ende Skill Bar -->
+          <div class="skillbar" data-percent="80%">
+            <div class="skillbar-title" style="background: #D0C6B1;"><span>Bootstrap</span></div>
+            <div class="skillbar-bar" style="background: #D0C6B1;"></div>
+            <div class="skill-bar-percent">80%</div>
+          </div> <!-- Ende Skill Bar -->
 
-  <div class="skillbar" data-percent="80%">
-		<div class="skillbar-title" style="background: #D0C6B1;"><span>Bootstrap</span></div>
-		<div class="skillbar-bar" style="background: #ffefa7;"></div>
-		<div class="skill-bar-percent">80%</div>
-	</div> <!-- Ende Skill Bar -->
+          <div class="skillbar" data-percent="80%">
+            <div class="skillbar-title" style="background: #D0C6B1;"><span>Bootstrap</span></div>
+            <div class="skillbar-bar" style="background: #ffefa7;"></div>
+            <div class="skill-bar-percent">80%</div>
+          </div> <!-- Ende Skill Bar -->
 
 
-</div>
-<!-- END- SKILLS -->
+        </div>
+        <!-- END- SKILLS -->
       </div>
 
     </div>
@@ -177,68 +177,101 @@
 
     <h3>Recent works</h3>
     <div class="button_group btn-group-lg filter_button_group">
-  <button class="button btn btn-success is-checked" data-filter="*">All projects</button>
-  <button class="button btn btn-success" data-filter=".metal">Development</button>
-  <button class="button btn btn-success" data-filter=".transition">Design</button>
-  <button class="button btn btn-success" data-filter=".alkali">Marketing</button>
+      <button class="button btn btn-success is-checked" data-filter="*">All projects</button>
+      <button class="button btn btn-success" data-filter=".metal">Development</button>
+      <button class="button btn btn-success" data-filter=".transition">Design</button>
+      <button class="button btn btn-success" data-filter=".alkali">Marketing</button>
+    </div>
 
-
-</div>
     <div class="portfolio_container" >
 
       <div class="portfolio_item metal">
-        <img src="img/board.jpg" alt="board">
+        <img src="img/mobile.jpg" alt="board">
       </div>
-
 
       <div class="portfolio_item alkali">
-        <img src="img/board.jpg" alt="board">
+        <img src="img/startup.jpg" alt="board">
       </div>
-
 
       <div class="portfolio_item metal">
-        <img src="img/board.jpg" alt="board">
+        <img src="img/computer1.jpg" alt="board">
       </div>
-
 
       <div class="portfolio_item transition">
-        <img src="img/board.jpg" alt="board">
-      </div>
-
-
-      <div class="portfolio_item alkali">
-        <img src="img/board.jpg" alt="board">
-      </div>
-
-
-      <div class="portfolio_item transition">
-        <img src="img/board.jpg" alt="board">
+        <img src="img/computer.jpg" alt="board">
       </div>
 
       <div class="portfolio_item alkali">
-        <img src="img/board.jpg" alt="laptop">
+        <img src="img/students.jpg" alt="board">
       </div>
 
+      <div class="portfolio_item transition">
+        <img src="img/student1.jpg" alt="board">
+      </div>
+
+      <div class="portfolio_item alkali">
+        <img src="img/student.jpg" alt="laptop">
+      </div>
 
       <div class="portfolio_item transition">
-        <img src="img/board.jpg" alt="board">
+        <img src="img/online.jpg" alt="board">
       </div>
 
     </div>
   </div>
 
   <!-- The Modal -->
-<div id="portfolioModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img01">
-  <div id="caption"></div>
-</div>
-
-  <div id="section5" class="container-fluid bg-info" style="padding-top:70px;padding-bottom:70px;height:800px">
-    <h1>Section 4 Submenu 2</h1>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <div id="portfolioModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
   </div>
+
+  <section id="section5" class="container-fluid">
+    <div class="testimonials_wrapper">
+      <h3>Testimonials</h3>
+      <h6>We're Proud of Your Work</h6>
+      <div id="demo" class="carousel slide" data-ride="carousel">
+
+
+
+      <div class="carousel-inner testimonials_holder">
+
+
+
+
+      <div class="testimonial_item carousel-item active">
+        <img src="img/girl.jpg" alt="testimonial">
+
+          <p>Morbi accumsan ipsum velit nam nec tellus a odiose tincidunt auctor a ornare odio sed non mauris vitae erat consequat auctor accumsan ipsum velit nam nec tellus a odiose tincidunt auctor a ornare odio sed non mauris vitae erat consequat</p>
+          <h6>Julia Owen</h6>
+
+      </div>
+
+      <div class="testimonial_item carousel-item">
+        <img src="img/woman.jpg" alt="testimonial">
+
+          <p>Morbi accumsan ipsum velit nam nec tellus a odiose tincidunt auctor a ornare odio sed non mauris vitae erat consequat auctor accumsan ipsum velit nam nec tellus a odiose tincidunt auctor a ornare odio sed non mauris vitae erat consequat</p>
+          <h6>Nancy Jefferson</h6>
+
+      </div>
+
+      <div class="testimonial_item carousel-item">
+        <img src="img/teenager.jpg" alt="testimonial">
+
+          <p>Morbi accumsan ipsum velit nam nec tellus a odiose tincidunt auctor a ornare odio sed non mauris vitae erat consequat auctor accumsan ipsum velit nam nec tellus a odiose tincidunt auctor a ornare odio sed non mauris vitae erat consequat</p>
+          <h6>Amanda Freeman</h6>
+
+      </div>
+</div>
+</div>
+    </div>
+  </section>
+
+  <section id="googleMap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3358.426248955876!2d-117.10163848482053!3d32.67470908100293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d95239afe91d91%3A0x8291162b4695eccf!2s1200+Highland+Ave%2C+National+City%2C+CA+91950%2C+USA!5e0!3m2!1sen!2sua!4v1534687653411" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen>
+
+  </iframe>
+</section>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
