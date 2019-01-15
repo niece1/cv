@@ -13,6 +13,18 @@ html {
   font-size: 10px;
 }
 
+@media only screen and (max-width: 1000px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 8px;
+  }
+}
+
 body {
   color: #000;
   position: relative;
@@ -238,16 +250,136 @@ ul.navbar-nav {
 
 #section2 .advantages-wrapper {
   width: 80%;
-  margin: auto;
+  margin: 0 auto 30px auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
 }
 
-#section2 .advantages-wrapper .advantage_item {
+@media only screen and (max-width: 900px) {
+  #section2 .advantages-wrapper {
+    grid-column-gap: 30px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #section2 .advantages-wrapper .left_advantage {
+    grid-area: 1/1/2/4;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #section2 .advantages-wrapper .left_advantage {
+    grid-area: 1/1/2/7;
+  }
+}
+
+#section2 .advantages-wrapper .left_advantage .advantage_item {
+  display: inline-block;
+}
+
+#section2 .advantages-wrapper .left_advantage .advantage_item .advantage_text {
+  width: 70%;
+  display: inline-block;
+}
+
+#section2 .advantages-wrapper .left_advantage .advantage_item .advantage_text h6 {
+  color: #59c383;
+}
+
+#section2 .advantages-wrapper .left_advantage .advantage_item .advantage_text p {
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+}
+
+#section2 .advantages-wrapper .left_advantage .advantage_item .advantage_icon {
+  display: inline-block;
+  float: right;
+}
+
+#section2 .advantages-wrapper .left_advantage .advantage_item .advantage_icon figure {
+  background-color: #59c383;
+  border-radius: 50%;
+}
+
+#section2 .advantages-wrapper .left_advantage .advantage_item .advantage_icon figure img {
+  padding: 20px;
+}
+
+#section2 .advantages-wrapper .advantage_portrait {
   text-align: center;
-  margin: 0 10px;
 }
 
-#section2 .advantages-wrapper .advantage_item img {
-  margin: auto;
+@media only screen and (max-width: 900px) {
+  #section2 .advantages-wrapper .advantage_portrait {
+    grid-area: 2/1/3/7;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #section2 .advantages-wrapper .advantage_portrait {
+    grid-area: 2/1/3/7;
+  }
+}
+
+#section2 .advantages-wrapper .advantage_portrait img {
+  width: 70%;
+  height: auto;
+  border-radius: 50%;
+  border: 3px solid #59c383;
+}
+
+@media only screen and (max-width: 900px) {
+  #section2 .advantages-wrapper .advantage_portrait img {
+    margin: 30px 0 30px 0;
+  }
+}
+
+#section2 .advantages-wrapper .right_advantage {
+  text-align: right;
+}
+
+@media only screen and (max-width: 900px) {
+  #section2 .advantages-wrapper .right_advantage {
+    grid-area: 1/4/2/7;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #section2 .advantages-wrapper .right_advantage {
+    grid-area: 3/1/4/7;
+  }
+}
+
+#section2 .advantages-wrapper .right_advantage .advantage_item {
+  display: inline-block;
+}
+
+#section2 .advantages-wrapper .right_advantage .advantage_item .advantage_icon {
+  display: inline-block;
+  float: left;
+}
+
+#section2 .advantages-wrapper .right_advantage .advantage_item .advantage_icon figure {
+  background-color: #59c383;
+  border-radius: 50%;
+}
+
+#section2 .advantages-wrapper .right_advantage .advantage_item .advantage_icon figure img {
+  padding: 20px;
+}
+
+#section2 .advantages-wrapper .right_advantage .advantage_item .advantage_text {
+  width: 70%;
+  display: inline-block;
+}
+
+#section2 .advantages-wrapper .right_advantage .advantage_item .advantage_text h6 {
+  color: #59c383;
+}
+
+#section2 .advantages-wrapper .right_advantage .advantage_item .advantage_text p {
+  font-size: 1.4rem;
+  margin-bottom: 30px;
 }
 
 #section3 {
@@ -324,7 +456,7 @@ ul.navbar-nav {
   font-size: 11px;
   height: 30px;
   line-height: 30px;
-  color: #fff;
+  color: #11325d;
 }
 
 #section4 {
@@ -463,7 +595,6 @@ ul.navbar-nav {
 
 #section5 {
   width: 100%;
-  height: 400px;
 }
 
 #section5 .testimonials_wrapper {
@@ -474,10 +605,6 @@ ul.navbar-nav {
 
 #section5 .testimonials_wrapper h3 {
   margin: 50px 0 15px 0;
-}
-
-#section5 .testimonials_wrapper h6 {
-  margin: 0 0 40px 0;
 }
 
 #section5 .testimonials_wrapper .testimonials_holder {
@@ -496,4 +623,9 @@ ul.navbar-nav {
 
 #section5 .testimonials_wrapper .testimonials_holder .testimonial_item p {
   margin: 20px 0 20px 0;
+}
+
+#section5 .testimonials_wrapper .testimonials_holder .testimonial_item h6 {
+  color: #59c383;
+  margin: 0 0 50px 0;
 }

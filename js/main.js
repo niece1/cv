@@ -23,36 +23,6 @@ $( document ).ready( function() {
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
-  // Slick slider
-  $(".advantages-wrapper").slick({
- infinite:true,
- arrows: false,
- autoplay: true,
- slidesToShow: 4,
- slidesToScroll: 1,
- speed: 1000,
- autoplaySpeed: 2000,
- pauseOnHover: false,
- responsive: [
-   {
-     breakpoint: 1000,
-     settings: {
-       slidesToShow: 2,
-       slidesToScroll: 1,
-       infinite: true,
-
-     }
-   },
-   {
-     breakpoint: 650,
-     settings: {
-       slidesToShow: 1,
-       slidesToScroll: 1
-     }
-   }
- ]
-
-});
 
 // Skillbar animation
 $(document).on('scroll', function(){
@@ -74,6 +44,7 @@ $('.filter_button_group').on( 'click', '.button', function() {
   var filterValue = $(this).attr('data-filter');
   $grid.isotope({ filter: filterValue });
 });
+
 
 });
 

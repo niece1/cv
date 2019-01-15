@@ -11,6 +11,12 @@
 
  html {
    font-size: 10px;
+   @media only screen and (max-width: 1000px) {
+     font-size: 9px;
+   }
+   @media only screen and (max-width: 600px) {
+     font-size: 8px;
+   }
  }
 
  body {
@@ -205,7 +211,7 @@ p {
     }
  }
 
- // Advantages section Slick slider stylesheet
+ // Advantages section Styles
  #section2 {
    width: 100%;
    min-height: 450px;
@@ -220,13 +226,97 @@ p {
    }
    .advantages-wrapper {
      width: 80%;
-     margin: auto;
-     .advantage_item {
-       text-align: center;
-       margin: 0 10px;
-       img {
+     margin: 0 auto 30px auto;
+     display: grid;
+     grid-template-columns: auto auto auto auto auto auto;
+     @media only screen and (max-width: 900px) {
+       grid-column-gap: 30px;
+     }
+     .left_advantage {
+       @media only screen and (max-width: 900px) {
+         grid-area: 1/1/2/4;
+       }
+       @media only screen and (max-width: 700px) {
+         grid-area: 1/1/2/7;
+       }
+       .advantage_item {
+         display: inline-block;
+         .advantage_text {
+           width: 70%;
+           display: inline-block;
+           h6 {
+             color: #59c383;
+           }
+           p {
+             font-size: 1.4rem;
+             margin-bottom: 30px;
+           }
+         }
+         .advantage_icon {
+           display: inline-block;
 
-         margin: auto;
+           float: right;
+           figure {
+             background-color: #59c383;
+             border-radius: 50%;
+             img {
+               padding: 20px;
+             }
+           }
+         }
+       }
+     }
+     .advantage_portrait {
+       text-align: center;
+       @media only screen and (max-width: 900px) {
+         grid-area: 2/1/3/7;
+       }
+       @media only screen and (max-width: 700px) {
+         grid-area: 2/1/3/7;
+       }
+       img {
+         width: 70%;
+         height: auto;
+         border-radius: 50%;
+         border: 3px solid #59c383;
+         @media only screen and (max-width: 900px) {
+           margin: 30px 0 30px 0;
+         }
+       }
+     }
+     .right_advantage {
+       text-align: right;
+       @media only screen and (max-width: 900px) {
+         grid-area: 1/4/2/7;
+       }
+       @media only screen and (max-width: 700px) {
+         grid-area: 3/1/4/7;
+       }
+       .advantage_item {
+         display: inline-block;
+         .advantage_icon {
+           display: inline-block;
+           float: left;
+           figure {
+             background-color: #59c383;
+             border-radius: 50%;
+             img {
+               padding: 20px;
+             }
+           }
+         }
+         .advantage_text {
+           width: 70%;
+           display: inline-block;
+
+           h6 {
+             color: #59c383;
+           }
+           p {
+             font-size: 1.4rem;
+             margin-bottom: 30px;
+           }
+         }
        }
      }
    }
@@ -293,7 +383,7 @@ p {
 		       font-size: 11px;
 		       height: 30px;
 		       line-height: 30px;
-		       color: #fff;
+		       color: #11325d;
 		//       color: rgba(0, 0, 0, 0.5);
          }
        }
@@ -399,16 +489,13 @@ p {
 
 #section5 {
   width: 100%;
-  height: 400px;
+
   .testimonials_wrapper {
     width: 50%;
     margin: auto;
     text-align: center;
     h3 {
       margin: 50px 0 15px 0;
-    }
-    h6 {
-      margin: 0 0 40px 0;
     }
     .testimonials_holder {
       width: 100%;
@@ -421,6 +508,10 @@ p {
         }
         p {
           margin: 20px 0 20px 0;
+        }
+        h6 {
+          color: #59c383;
+          margin: 0 0 50px 0;
         }
       }
     }
