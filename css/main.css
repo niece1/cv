@@ -205,16 +205,16 @@ ul.navbar-nav {
 .parallax figure figcaption button {
   margin: 15px 3px 0 3px;
   font-size: 2rem;
-  color: #ffefa7;
+  color: #ffe484;
   background: transparent;
-  border: 1px solid #ffefa7;
+  border: 1px solid #ffe484;
   border-radius: 3px;
   padding: 8px 14px;
 }
 
 .parallax figure figcaption button:hover {
   color: #11325d;
-  background-color: #ffefa7;
+  background-color: #ffe484;
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -223,7 +223,7 @@ ul.navbar-nav {
 
 .parallax figure figcaption button:focus {
   color: #11325d;
-  background-color: #ffefa7;
+  background-color: #ffe484;
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -628,4 +628,233 @@ ul.navbar-nav {
 #section5 .testimonials_wrapper .testimonials_holder .testimonial_item h6 {
   color: #59c383;
   margin: 0 0 50px 0;
+}
+
+.techologies {
+  width: 100%;
+  height: 200px;
+  background-image: url(../img/desk.jpg);
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.techologies .techologies_background {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  background: rgba(89, 195, 131, 0.9);
+}
+
+.techologies .techologies_background .techologies_wrapper {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.techologies .techologies_background .techologies_wrapper .techologies_image_holder {
+  width: 130px;
+}
+
+.techologies .techologies_background .techologies_wrapper .techologies_image_holder img {
+  width: 100%;
+  height: auto;
+  padding: 0 20px;
+}
+
+.contact {
+  width: 100%;
+  height: auto;
+}
+
+.contact .contact-wrapper {
+  width: 80%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.contact .contact-wrapper .contact_details h6 {
+  color: #59c383;
+}
+
+.contact .contact-wrapper .contact_details p {
+  font-size: 1.4rem;
+}
+
+.contact .contact-wrapper .contact_details hr {
+  width: 60%;
+  background-color: #ffe484;
+}
+
+.contact .contact-wrapper .contact_form .name_email_subject {
+  width: 100%;
+}
+
+.contact .contact-wrapper .contact_form .name_email_subject input {
+  width: 32%;
+  padding: 15px 20px;
+  border: 1px solid #59c383;
+  border-radius: 3px;
+  float: left;
+  outline: none;
+  font-size: 1.6rem;
+  color: #59c383;
+}
+
+.contact .contact-wrapper .contact_form .name_email_subject input::-webkit-input-placeholder {
+  color: #000;
+  font-size: 1.6rem;
+}
+
+.contact .contact-wrapper .contact_form .name_email_subject input:-ms-input-placeholder {
+  color: #000;
+  font-size: 1.6rem;
+}
+
+.contact .contact-wrapper .contact_form .name_email_subject input::-ms-input-placeholder {
+  color: #000;
+  font-size: 1.6rem;
+}
+
+.contact .contact-wrapper .contact_form .name_email_subject input::placeholder {
+  color: #000;
+  font-size: 1.6rem;
+}
+
+.contact .contact-wrapper .contact_form .name_email_subject input[type="text"] {
+  margin: 0 2% 0 0;
+}
+
+.contact .contact-wrapper .contact_form .message {
+  width: 100%;
+}
+
+.contact .contact-wrapper .contact_form .message input {
+  width: 100%;
+  padding: 15px 20px 150px 20px;
+  border: 1px solid #59c383;
+  border-radius: 3px;
+  margin: 20px 0 0 0;
+  outline: none;
+  font-size: 1.6rem;
+  color: #59c383;
+}
+
+.contact .contact-wrapper .contact_form .message input::-webkit-input-placeholder {
+  color: #000;
+  font-size: 1.6rem;
+}
+
+.contact .contact-wrapper .contact_form .message input:-ms-input-placeholder {
+  color: #000;
+  font-size: 1.6rem;
+}
+
+.contact .contact-wrapper .contact_form .message input::-ms-input-placeholder {
+  color: #000;
+  font-size: 1.6rem;
+}
+
+.contact .contact-wrapper .contact_form .message input::placeholder {
+  color: #000;
+  font-size: 1.6rem;
+}
+
+.contact .contact-wrapper .contact_form input[type="submit"] {
+  background-color: #ffe484;
+  padding: 8px 20px;
+  font-size: 2rem;
+  border: 1px solid #ffe484;
+  border-radius: 3px;
+  margin-top: 15px;
+  color: #fff;
+  outline: none;
+}
+
+.contact .contact-wrapper .contact_form input[type="submit"]:hover {
+  background-color: transparent;
+  border: 1px solid #ffe484;
+  color: #ffe484;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact .contact-wrapper {
+    grid-template-columns: 100%;
+  }
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #59c383;
+}
+
+footer .footer_wrapper {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+footer .footer_wrapper .copyright {
+  color: #11325d;
+}
+
+footer .footer_wrapper .copyright p {
+  margin: 20px 0;
+}
+
+footer .footer_wrapper .social {
+  text-align: center;
+}
+
+footer .footer_wrapper .social a {
+  font-size: 2rem;
+}
+
+footer .footer_wrapper .social a i {
+  margin: 20px 3px;
+  color: #fff;
+}
+
+footer .footer_wrapper .social a i:hover {
+  color: #11325d;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+footer .footer_wrapper .button_up {
+  text-align: right;
+}
+
+footer .footer_wrapper .button_up button {
+  background-color: #59c383;
+  border: none;
+  cursor: pointer;
+  color: #11325d;
+  font-size: 1.6rem;
+  margin: 20px 0;
+  outline: none;
+}
+
+footer .footer_wrapper .button_up button i {
+  margin-left: 7px;
+}
+
+footer .footer_wrapper .button_up button:hover {
+  color: #fff;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }

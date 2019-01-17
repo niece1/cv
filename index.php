@@ -8,6 +8,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=PT+Serif|Roboto|Rubik|Shrikhand" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
 
   <title>Alonso, web developer</title>
@@ -327,9 +328,104 @@
     </div>
   </section>
 
-  <div id="map"></div>
+<section class="techologies" data-type="background">
+  <div class="techologies_background">
+  <div class="techologies_wrapper">
 
 
+
+  <div class="techologies_image_holder">
+<img src="img/php.png" alt="php">
+</div>
+
+<div class="techologies_image_holder">
+<img src="img/vue.png" alt="vue">
+</div>
+
+<div class="techologies_image_holder">
+<img src="img/yii.png" alt="yii">
+</div>
+
+<div class="techologies_image_holder">
+<img src="img/docker.png" alt="docker">
+</div>
+
+<div class="techologies_image_holder">
+<img src="img/wordpress.png" alt="wordpress">
+</div>
+
+<div class="techologies_image_holder">
+<img src="img/woocommerce.png" alt="woocommerce">
+</div>
+
+<div class="techologies_image_holder">
+<img src="img/gulp.png" alt="gulp">
+</div>
+
+<div class="techologies_image_holder">
+<img src="img/vagrant.png" alt="vagrant">
+</div>
+
+  </div>
+</section>
+
+<section class="contact">
+  <div class="contact-wrapper">
+    <div class="contact_details">
+      <h6>Address</h6>
+      <p>10 Downing Street</p>
+      <p>London</p>
+      <p>SW1A 2AA</p>
+      <hr>
+      <h6>Phone</h6>
+      <p>Landline: +38 044 553 8848</p>
+      <p>Mobile: +38 066 455 7032</p>
+      <hr>
+      <h6>Email</h6>
+      <p>contact@alonso.com</p>
+      <p>support@alonso.com</p>
+    </div>
+
+
+
+
+    <form class="contact_form" action="" method="post">
+      <div class="name_email_subject">
+
+        <input type="text" name="" value="" placeholder="Name">
+        <input type="text" name="" value="" placeholder="Subject">
+        <input type="email" name="" value="" placeholder="Email">
+      </div>
+
+      <div class="message">
+        <input type="textarea" name="" value="" placeholder="Message">
+      </div>
+      <input type="submit" name="" value="Submit">
+  </form>
+      </div>
+</section>
+
+<footer>
+
+    <div class="footer_wrapper">
+
+      <div class="copyright">
+    <p>&copy;Alonso. All rights reserved. 2019</p>
+    </div>
+
+    <div class="social">
+  <a href="#"><i class="fab fa-facebook-f"></i></a>
+  <a href="#"><i class="fab fa-twitter"></i></a>
+  <a href="#"><i class="fab fa-codepen"></i></a>
+  <a href="#"><i class="fab fa-github"></i></a>
+  </div>
+
+  <div class="button_up">
+<button class="btn-up">Back to top<i class="fas fa-angle-up"></i></button>
+</div>
+
+  </div>
+</footer>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -337,8 +433,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8l-Csy9o8o0KNXUiejxfKpLTA_GVa_qQ&callback=initMap"
-async defer></script>
+
 <script type="text/javascript" src="js/main.js">
 
 </script>
