@@ -218,13 +218,6 @@
             <div class="skill-bar-percent">80%</div>
           </div> <!-- Ende Skill Bar -->
 
-          <div class="skillbar" data-percent="80%">
-            <div class="skillbar-title" style="background: #D0C6B1;"><span>Bootstrap</span></div>
-            <div class="skillbar-bar" style="background: #ffefa7;"></div>
-            <div class="skill-bar-percent">80%</div>
-          </div> <!-- Ende Skill Bar -->
-
-
         </div>
         <!-- END- SKILLS -->
       </div>
@@ -236,11 +229,15 @@
   <div id="section4" >
 
     <h3>Recent works</h3>
-    <div class="button_group btn-group-lg filter_button_group">
-      <button class="button btn btn-success is-checked" data-filter="*">All projects</button>
-      <button class="button btn btn-success" data-filter=".metal">Development</button>
-      <button class="button btn btn-success" data-filter=".transition">Design</button>
-      <button class="button btn btn-success" data-filter=".alkali">Marketing</button>
+    <div class="filters filter_button_group">
+      <ul>
+
+
+      <li class="active" data-filter="*">All projects</li>
+      <li data-filter=".metal">Development</li>
+      <li data-filter=".transition">Design</li>
+      <li data-filter=".alkali">Marketing</li>
+      </ul>
     </div>
 
     <div class="portfolio_container" >

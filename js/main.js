@@ -40,10 +40,16 @@ var $grid = $('.portfolio_container').isotope({
   stagger: 30
 });
 
-$('.filter_button_group').on( 'click', '.button', function() {
+$('.filter_button_group').on( 'click', 'li', function() {
   var filterValue = $(this).attr('data-filter');
   $grid.isotope({ filter: filterValue });
+
+  $('.filter_button_group li').removeClass('active');
+  $(this).addClass('active');
 });
+
+
+
 
 
 //Parallax
@@ -74,7 +80,7 @@ $('.filter_button_group').on( 'click', '.button', function() {
 
     // Button Up
      var $btnUp = $(".btn-up")
-     
+
      $btnUp.on("click", function(){
        $("html,body").animate({scrollTop:0}, 900)
      });
