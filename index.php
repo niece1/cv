@@ -56,7 +56,7 @@
         <h2>Alonso Media. Deserve a better code</h2>
         <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quas aspernatur libero sint ratione facilis iste et! Eligendi, nesciunt, cumque?</h6>
         <button type="button" name="button" class="button">Contact us</button>
-        <button type="button" name="button" class="button">Contact us</button>
+        <button type="button" name="button">Contact us</button>
       </figcaption>
     </figure>
 
@@ -243,35 +243,35 @@
     <div class="portfolio_container" >
 
       <div class="portfolio_item metal">
-        <img src="img/mobile.jpg" alt="board">
+        <img src="img/mobile.jpg" class="modal_image" alt="board">
       </div>
 
       <div class="portfolio_item alkali">
-        <img src="img/startup.jpg" alt="board">
+        <img src="img/startup.jpg" class="modal_image" alt="board">
       </div>
 
       <div class="portfolio_item metal">
-        <img src="img/computer1.jpg" alt="board">
+        <img src="img/computer1.jpg" class="modal_image" alt="board">
       </div>
 
       <div class="portfolio_item transition">
-        <img src="img/computer.jpg" alt="board">
+        <img src="img/computer.jpg" class="modal_image" alt="board">
       </div>
 
       <div class="portfolio_item alkali">
-        <img src="img/students.jpg" alt="board">
+        <img src="img/students.jpg" class="modal_image" alt="board">
       </div>
 
       <div class="portfolio_item transition">
-        <img src="img/student1.jpg" alt="board">
+        <img src="img/student1.jpg" class="modal_image" alt="board">
       </div>
 
       <div class="portfolio_item alkali">
-        <img src="img/student.jpg" alt="laptop">
+        <img src="img/student.jpg" class="modal_image" alt="laptop">
       </div>
 
       <div class="portfolio_item transition">
-        <img src="img/online.jpg" alt="board">
+        <img src="img/online.jpg" class="modal_image" alt="board">
       </div>
 
     </div>

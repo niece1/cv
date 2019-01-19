@@ -95,7 +95,7 @@ span.on("click", function() {
     modal.style.display = "none";
 });
 
-var images = document.getElementsByTagName("img");
+var images = document.getElementsByClassName("modal_image");
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 var i;
