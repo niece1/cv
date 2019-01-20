@@ -97,12 +97,13 @@ ul.navbar-nav {
   font-size: 1.2rem;
   font-weight: 700;
   text-transform: uppercase;
+  display: inline-block;
   color: #11325d !important;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-  color: #fff !important;
+  color: #ffe484 !important;
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -110,7 +111,7 @@ ul.navbar-nav {
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link.active,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
-  color: #fff !important;
+  color: #ffe484 !important;
   background-color: transparent;
 }
 
@@ -437,27 +438,49 @@ button.navbar-toggler {
   min-height: auto;
   width: 100%;
   background-color: #f9f9f9;
-}
-
-#section3 .row .col-md-6 {
   padding: 0;
+  margin: 0;
 }
 
-#section3 .row .col-md-6 img {
+#section3 .skills_wrapper {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+@media only screen and (max-width: 1130px) {
+  #section3 .skills_wrapper {
+    grid-template-columns: 100%;
+  }
+}
+
+#section3 .skills_wrapper .skills_image img {
   width: 100%;
   height: auto;
 }
 
-#section3 .row .col-md-6 .skillbar-wrapper {
+#section3 .skills_wrapper .skills_right .skillbar-wrapper {
   width: 80%;
   margin: auto;
 }
 
-#section3 .row .col-md-6 .skillbar-wrapper h4 {
+#section3 .skills_wrapper .skills_right .skillbar-wrapper h4 {
   padding: 20px 0;
 }
 
-#section3 .row .col-md-6 .skillbar-wrapper .skillbar {
+@media only screen and (max-width: 1200px) and (min-width: 1150px) {
+  #section3 .skills_wrapper .skills_right .skillbar-wrapper h4 {
+    padding: 10px 0;
+  }
+}
+
+@media only screen and (max-width: 1150px) and (min-width: 1130px) {
+  #section3 .skills_wrapper .skills_right .skillbar-wrapper h4 {
+    padding: 10px 0 5px 0;
+    font-size: 2rem;
+  }
+}
+
+#section3 .skills_wrapper .skills_right .skillbar-wrapper .skillbar {
   position: relative;
   display: block;
   margin-bottom: 15px;
@@ -473,7 +496,7 @@ button.navbar-toggler {
   transition-property: width, background-color;
 }
 
-#section3 .row .col-md-6 .skillbar-wrapper .skillbar-title {
+#section3 .skills_wrapper .skills_right .skillbar-wrapper .skillbar-title {
   position: absolute;
   top: 0;
   left: 0;
@@ -486,7 +509,7 @@ button.navbar-toggler {
   border-bottom-left-radius: 3px;
 }
 
-#section3 .row .col-md-6 .skillbar-wrapper .skillbar-title span {
+#section3 .skills_wrapper .skills_right .skillbar-wrapper .skillbar-title span {
   display: block;
   background: rgba(0, 0, 0, 0.15);
   padding: 0 20px;
@@ -496,20 +519,20 @@ button.navbar-toggler {
   border-bottom-left-radius: 3px;
 }
 
-#section3 .row .col-md-6 .skillbar-wrapper .skillbar-bar {
+#section3 .skills_wrapper .skills_right .skillbar-wrapper .skillbar-bar {
   height: 30px;
   width: 0px;
   border-radius: 3px;
 }
 
-#section3 .row .col-md-6 .skillbar-wrapper .skill-bar-percent {
+#section3 .skills_wrapper .skills_right .skillbar-wrapper .skill-bar-percent {
   position: absolute;
   right: 10px;
   top: 0;
   font-size: 11px;
   height: 30px;
   line-height: 30px;
-  color: #11325d;
+  color: #fff;
 }
 
 #section4 {
@@ -776,7 +799,7 @@ button.navbar-toggler {
 .techologies .techologies_background .techologies_wrapper .techologies_image_holder img {
   width: 100%;
   height: auto;
-  padding: 0 20px;
+  padding: 10px 20px;
 }
 
 @media only screen and (max-width: 1180px) {
@@ -793,25 +816,25 @@ button.navbar-toggler {
 
 @media only screen and (max-width: 1180px) {
   .techologies .techologies_background {
-    height: 350px;
+    height: 400px;
   }
 }
 
 @media only screen and (max-width: 650px) {
   .techologies .techologies_background {
-    height: 470px;
+    height: 550px;
   }
 }
 
 @media only screen and (max-width: 1180px) {
   .techologies {
-    min-height: 350px;
+    min-height: 400px;
   }
 }
 
 @media only screen and (max-width: 650px) {
   .techologies {
-    min-height: 470px;
+    min-height: 550px;
   }
 }
 

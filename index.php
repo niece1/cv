@@ -17,7 +17,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <!-- Brand -->
-    <a class="navbar-brand logo" href="#">Alonso</a>
+    <a class="navbar-brand logo js-scroll-trigger" href="#section1">Alonso</a>
 
     <!-- Toggler/collapsibe Button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -28,19 +28,19 @@
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#section1">home</a>
+          <a class="nav-link js-scroll-trigger" href="#section1">home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#section2">about</a>
+          <a class="nav-link js-scroll-trigger" href="#section2">about</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#section3">link</a>
+          <a class="nav-link js-scroll-trigger" href="#section3">link</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#section4">portfolio</a>
+          <a class="nav-link js-scroll-trigger" href="#section4">portfolio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#section5">contacts</a>
+          <a class="nav-link js-scroll-trigger" href="#section5">contacts</a>
         </li>
       </ul>
     </div>
@@ -55,8 +55,8 @@
       <figcaption>
         <h2>Alonso Media. Deserve a better code</h2>
         <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quas aspernatur libero sint ratione facilis iste et! Eligendi, nesciunt, cumque?</h6>
-        <button type="button" name="button" class="button">Contact us</button>
-        <button type="button" name="button">Contact us</button>
+        <button type="button" name="button" class="button">About me</button>
+        <button type="button" name="button">Contact me</button>
       </figcaption>
     </figure>
 
@@ -167,12 +167,13 @@
   </section>
 
   <section id="section3" class="container-fluid">
-    <div class="row">
-      <div class="col-md-6 ">
+
+      <div class="skills_wrapper">
+          <div class="skills_image">
         <img src="img/skills.jpg" alt="skills">
       </div>
 
-      <div class="col-md-6 ">
+      <div class="skills_right">
         <!-- SKILLS -->
         <div id="skills" class="skillbar-wrapper">
           <h4>Skills & Expertise</h4>
@@ -183,38 +184,38 @@
           </div> <!-- Ende Skill Bar -->
 
           <div class="skillbar" data-percent="55%">
-            <div class="skillbar-title" style="background: #EBB035;"><span>CSS</span></div>
-            <div class="skillbar-bar" style="background: #EBB035;"></div>
+            <div class="skillbar-title" style="background: #ffff00;"><span>CSS</span></div>
+            <div class="skillbar-bar" style="background: #ffff00;"></div>
             <div class="skill-bar-percent">55%</div>
           </div> <!-- Ende Skill Bar -->
 
           <div class="skillbar" data-percent="60%">
-            <div class="skillbar-title" style="background: #06A2CB;"><span>Java Script</span></div>
+            <div class="skillbar-title" style="background: #06A2CB;"><span>jQuery</span></div>
             <div class="skillbar-bar" style="background: #06A2CB;"></div>
             <div class="skill-bar-percent">60%</div>
           </div> <!-- Ende Skill Bar -->
 
           <div class="skillbar" data-percent="55%">
-            <div class="skillbar-title" style="background: #218559;"><span>jQuery</span></div>
+            <div class="skillbar-title" style="background: #218559;"><span>VueJs</span></div>
             <div class="skillbar-bar" style="background: #218559;"></div>
             <div class="skill-bar-percent">55%</div>
           </div> <!-- Ende Skill Bar -->
 
           <div class="skillbar" data-percent="80%">
-            <div class="skillbar-title" style="background: #D0C6B1;"><span>Bootstrap</span></div>
-            <div class="skillbar-bar" style="background: #D0C6B1;"></div>
+            <div class="skillbar-title" style="background: #ff9900;"><span>PHP</span></div>
+            <div class="skillbar-bar" style="background: #ff9900;"></div>
             <div class="skill-bar-percent">80%</div>
           </div> <!-- Ende Skill Bar -->
 
           <div class="skillbar" data-percent="80%">
-            <div class="skillbar-title" style="background: #D0C6B1;"><span>Bootstrap</span></div>
-            <div class="skillbar-bar" style="background: #D0C6B1;"></div>
+            <div class="skillbar-title" style="background: #33cc33;"><span>Yii2</span></div>
+            <div class="skillbar-bar" style="background: #33cc33;"></div>
             <div class="skill-bar-percent">80%</div>
           </div> <!-- Ende Skill Bar -->
 
           <div class="skillbar" data-percent="80%">
-            <div class="skillbar-title" style="background: #D0C6B1;"><span>Bootstrap</span></div>
-            <div class="skillbar-bar" style="background: #D0C6B1;"></div>
+            <div class="skillbar-title" style="background: #1a1aff;"><span>Wordpress</span></div>
+            <div class="skillbar-bar" style="background: #1a1aff;"></div>
             <div class="skill-bar-percent">80%</div>
           </div> <!-- Ende Skill Bar -->
 
@@ -222,7 +223,7 @@
         <!-- END- SKILLS -->
       </div>
 
-    </div>
+  </div>
 
   </section>
 
@@ -232,11 +233,10 @@
     <div class="filters filter_button_group">
       <ul>
 
-
       <li class="active" data-filter="*">All projects</li>
-      <li data-filter=".metal">Development</li>
-      <li data-filter=".transition">Design</li>
-      <li data-filter=".alkali">Marketing</li>
+      <li data-filter=".metal">Wordpress/Woocommerce</li>
+      <li data-filter=".transition">Yii2</li>
+      <li data-filter=".alkali">VueJs</li>
       </ul>
     </div>
 
@@ -290,12 +290,7 @@
 
       <div id="demo" class="carousel slide" data-ride="carousel">
 
-
-
         <div class="carousel-inner testimonials_holder">
-
-
-
 
           <div class="testimonial_item carousel-item active">
             <img src="img/girl.jpg" alt="testimonial">
@@ -428,6 +423,8 @@
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/jquery.easing.js">
+</script>
 <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
