@@ -67,7 +67,7 @@ p {
    color: rgb(17, 50, 93) !important;
    font-size: 4.5rem;
    padding-left: 30px;
-   font-family: 'Shrikhand', cursive;
+   font-family: 'Oswald', sans-serif;
  }
 
  nav {
@@ -212,34 +212,50 @@ button.navbar-toggler {
         h6 {
           color: rgb(17, 50, 93);
         }
-        button {
+        a.about_me_link {
           margin: 15px 3px 0 3px;
           font-size: 2rem;
-          color: #ffe484;
-          background: transparent;
+          color: #59c383;
+          display: inline-block;
+          text-decoration: none;
+          min-width: 130px;
+          background: #ffe484;
           border: 1px solid #ffe484;
           border-radius: 3px;
-          padding: 8px 14px;
+          padding: 8px 0;
           &:hover {
-            color: #59c383;
-            background-color: #ffe484;
+            color: #ffe484;
+            background-color: #59c383;
             transition: all 0.5s ease-in-out;
-            cursor: pointer;
           }
           &:focus {
-            color: rgb(17, 50, 93);
-            background-color: #ffe484;
+            color: #ffe484;
+            background-color: #59c383;
             transition: all 0.5s ease-in-out;
-            cursor: pointer;
             outline: none;
           }
         }
-        button.button {
-          background-color: #ffe484;
-          color: #59c383;
+        a.contact_me_link {
+          margin: 15px 3px 0 3px;
+          font-size: 2rem;
+          color: #ffe484;
+          display: inline-block;
+          text-decoration: none;
+          min-width: 130px;
+          background: transparent;
+          border: 1px solid #ffe484;
+          border-radius: 3px;
+          padding: 8px 0;
           &:hover {
-            background-color: transparent;
-            color: #ffe484;
+            background-color: #ffe484;
+            color: #59c383;
+            transition: all 0.5s ease-in-out;
+          }
+          &:focus {
+            color: #59c383;
+            background-color: #ffe484;
+            transition: all 0.5s ease-in-out;
+            outline: none;
           }
         }
       }
@@ -562,7 +578,7 @@ button.navbar-toggler {
 
 // Testimonials Section stylesheet
 
-#section5 {
+.testimonials {
   width: 100%;
   .testimonials_wrapper {
     width: 50%;
@@ -796,10 +812,11 @@ footer {
     }
     .button_up {
       text-align: right;
-      button {
+      a {
         background-color: #59c383;
         border: none;
-        cursor: pointer;
+        display: inline-block;
+        text-decoration: none;
         color: rgb(17, 50, 93);
         font-size: 1.6rem;
         margin: 20px 0;
