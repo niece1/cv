@@ -6,7 +6,7 @@ function my_autoloader($class_name)
     $array_paths = array(
         '/models/',
         '/components/',
-        '/controllers/',
+        '/controllers/'
     );
 
     foreach ($array_paths as $path) {

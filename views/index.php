@@ -13,7 +13,7 @@
 
   <title>Alonso, web developer</title>
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="30">
+<body data-spy="scroll" data-target=".navbar" data-offset="80">
 
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <!-- Brand -->
@@ -58,7 +58,7 @@
         <h2>Alonso Media. Deserve a better code</h2>
         <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quas aspernatur libero sint ratione facilis iste et! Eligendi, nesciunt, cumque?</h6>
         <a href="#section2" class="about_me_link js-scroll-trigger">About me</a>
-        <a href="#section5" class="contact_me_link js-scroll-trigger">Contact me</a>
+        <a href="#section6" class="contact_me_link js-scroll-trigger">Contact me</a>
       </figcaption>
     </figure>
 
@@ -150,7 +150,7 @@
     </div>
   </section>
 
-  <section id="section3" class="container-fluid">
+  <section id="section3">
 
     <div class="skills_wrapper">
       <div class="skills_image">
@@ -304,7 +304,7 @@
     </div>
   </section>
 
-  <section class="techologies" data-type="background">
+  <section id="section6" class="techologies" data-type="background">
     <div class="techologies_background">
       <div class="techologies_wrapper">
 
@@ -345,7 +345,7 @@
       </div>
     </section>
 
-    <section id="section6" class="contact">
+    <section class="contact">
       <div class="contact-wrapper">
         <div class="contact_details">
           <h6>Address</h6>
@@ -390,8 +390,8 @@
         </div>
 
         <div class="social">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="facebook.com"><i class="fab fa-facebook-f"></i></a>
+          <a href="twitter.com"><i class="fab fa-twitter"></i></a>
           <a href="#"><i class="fab fa-codepen"></i></a>
           <a href="#"><i class="fab fa-github"></i></a>
         </div>

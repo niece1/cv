@@ -109,8 +109,7 @@ ul.navbar-nav {
   transition: all 0.5s ease-in-out;
 }
 
-#mainNav .navbar-nav > li.nav-item > a.nav-link.active,
-#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active {
   color: #ffe484 !important;
   background-color: transparent;
 }
@@ -307,6 +306,8 @@ button.navbar-toggler {
 #section2 {
   width: 100%;
   min-height: 450px;
+  position: relative;
+  overflow-y: hidden;
 }
 
 #section2 .introadvantages {
@@ -459,6 +460,8 @@ button.navbar-toggler {
   min-height: auto;
   width: 100%;
   background-color: #f9f9f9;
+  overflow-y: hidden;
+  position: relative;
   padding: 0;
   margin: 0;
 }
@@ -558,6 +561,8 @@ button.navbar-toggler {
 
 #section4 {
   width: 100%;
+  position: relative;
+  overflow-y: hidden;
 }
 
 #section4 h3 {
@@ -727,6 +732,8 @@ button.navbar-toggler {
 
 .testimonials {
   width: 100%;
+  position: relative;
+  overflow-y: hidden;
 }
 
 .testimonials .testimonials_wrapper {
@@ -792,6 +799,8 @@ button.navbar-toggler {
   background-image: url(../img/desk.jpg);
   background-position: center;
   background-attachment: fixed;
+  position: relative;
+  overflow-y: hidden;
 }
 
 .techologies .techologies_background {
@@ -862,6 +871,8 @@ button.navbar-toggler {
 .contact {
   width: 100%;
   height: auto;
+  position: relative;
+  overflow-y: hidden;
 }
 
 .contact .contact-wrapper {
