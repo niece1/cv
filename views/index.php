@@ -365,19 +365,31 @@
 
 
 
-        <form class="contact_form" action="" method="post">
+        <form class="contact_form" action="#section6" method="post" id="cf">
+          <?php  if ($result): ?>
+                              <p>Message sent! We reply on specified email. Thank you.</p>
+                          <?php else: ?>
+                              <?php if (isset($errors) && is_array($errors)): ?>
+                                  <ul>
+                                      <?php foreach ($errors as $error): ?>
+                                          <li> - <?php echo $error; ?></li>
+                                      <?php endforeach; ?>
+                                  </ul>
+                              <?php endif; ?>
           <div class="name_email_subject">
 
-            <input type="text" name="" value="" placeholder="Name">
-            <input type="text" name="" value="" placeholder="Subject">
-            <input type="email" name="" value="" placeholder="Email">
+            <input type="text" name="userName" value="<?php echo $userName; ?>" placeholder="Name">
+            <input type="text" name="userSubject" value="<?php echo $userSubject; ?>" placeholder="Subject">
+            <input type="email" name="userEmail" value="<?php echo $userEmail; ?>" placeholder="Email">
           </div>
 
           <div class="message">
-            <input type="textarea" name="" value="" placeholder="Message">
+            <input type="text" name="userText" value="<?php echo $userText; ?>" placeholder="Message">
           </div>
-          <input type="submit" name="" value="Submit">
+          <input type="submit" name="submit" value="Submit">
+          <?php endif; ?>
         </form>
+
       </div>
     </section>
 
@@ -386,14 +398,14 @@
       <div class="footer_wrapper">
 
         <div class="copyright">
-          <p>&copy;Alonso. All rights reserved. 2019</p>
+          <p>&copy;Alonso. All rights reserved. <?php echo date("Y"); ?></p>
         </div>
 
         <div class="social">
-          <a href="facebook.com"><i class="fab fa-facebook-f"></i></a>
-          <a href="twitter.com"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-codepen"></i></a>
-          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="http://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+          <a href="http://www.twitter.com"><i class="fab fa-twitter"></i></a>
+          <a href="http://www.codepen.com"><i class="fab fa-codepen"></i></a>
+          <a href="http://www.github.com"><i class="fab fa-github"></i></a>
         </div>
 
         <div class="button_up">

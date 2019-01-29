@@ -69,6 +69,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
 a.logo {
   color: #11325d !important;
   font-size: 4.5rem;
@@ -899,6 +903,14 @@ button.navbar-toggler {
   .contact .contact-wrapper .contact_details {
     margin-bottom: 30px;
   }
+}
+
+.contact .contact-wrapper .contact_form ul {
+  color: red;
+}
+
+.contact .contact-wrapper .contact_form p {
+  color: #59c383;
 }
 
 .contact .contact-wrapper .contact_form .name_email_subject {

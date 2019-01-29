@@ -63,6 +63,10 @@ p {
    text-decoration: none;
  }
 
+ ul {
+   list-style: none;
+ }
+
  a.logo {
    color: rgb(17, 50, 93) !important;
    font-size: 4.5rem;
@@ -708,6 +712,12 @@ button.navbar-toggler {
       }
     }
     .contact_form {
+      ul {
+        color: red;
+      }
+      p {
+        color: #59c383;
+      }
       .name_email_subject {
         width: 100%;
         input {

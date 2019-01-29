@@ -37,7 +37,6 @@ $( document ).ready( function() {
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
-
 // Skillbar animation
 $(document).on('scroll', function(){
 	if($('html,body').scrollTop() > $('#skills').height()){
@@ -61,10 +60,6 @@ $('.filter_button_group').on( 'click', 'li', function() {
 	$('.filter_button_group li').removeClass('active');
 	$(this).addClass('active');
 });
-
-
-
-
 
 //Parallax
 var $window = $(window);
@@ -91,7 +86,6 @@ if($('section[data-type="background"]').length){
 		});
 	});
 }
-
 
 
 });
