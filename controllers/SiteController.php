@@ -28,12 +28,12 @@ class SiteController
         $errors = false;
 
                 // Fields validation
-                if (!Contact::checkName($userName)) {
-                    $errors[] = 'Name must consist of at least two letters';
-                }
-                if (!Contact::checkSubject($userSubject)) {
-                    $errors[] = 'Subject cannot be empty';
-                }
+        if (!Contact::checkName($userName)) {
+            $errors[] = 'Name must consist of at least two letters';
+        }
+        if (!Contact::checkSubject($userSubject)) {
+            $errors[] = 'Subject cannot be empty';
+        }
         if (!Contact::checkEmail($userEmail)) {
             $errors[] = 'Incorrect email';
         }
@@ -56,7 +56,5 @@ class SiteController
         // View connect
     require_once(ROOT . '/views/index.php');
     return true;
-}
-
-
+    }
 }

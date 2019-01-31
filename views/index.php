@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto|Rubik" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main.min.css">
 
   <title>Alonso, web developer</title>
 </head>
@@ -62,7 +62,6 @@
       </figcaption>
     </figure>
 
-    <!-- /.parallax -->
   </section>
 
   <section id="section2" class="container-fluid">
@@ -158,57 +157,55 @@
       </div>
 
       <div class="skills_right">
-        <!-- SKILLS -->
+     
         <div id="skills" class="skillbar-wrapper">
           <h4>Skills & Expertise</h4>
           <div class="skillbar" data-percent="70%">
             <div class="skillbar-title" style="background: #DD1E2F;"><span>HTML</span></div>
             <div class="skillbar-bar" style="background: #DD1E2F;"></div>
             <div class="skill-bar-percent">70%</div>
-          </div> <!-- Ende Skill Bar -->
+          </div> 
 
           <div class="skillbar" data-percent="55%">
             <div class="skillbar-title" style="background: #ffff00;"><span>CSS</span></div>
             <div class="skillbar-bar" style="background: #ffff00;"></div>
             <div class="skill-bar-percent">55%</div>
-          </div> <!-- Ende Skill Bar -->
+          </div> 
 
           <div class="skillbar" data-percent="60%">
             <div class="skillbar-title" style="background: #06A2CB;"><span>jQuery</span></div>
             <div class="skillbar-bar" style="background: #06A2CB;"></div>
             <div class="skill-bar-percent">60%</div>
-          </div> <!-- Ende Skill Bar -->
+          </div> 
 
           <div class="skillbar" data-percent="55%">
             <div class="skillbar-title" style="background: #218559;"><span>VueJs</span></div>
             <div class="skillbar-bar" style="background: #218559;"></div>
             <div class="skill-bar-percent">55%</div>
-          </div> <!-- Ende Skill Bar -->
+          </div> 
 
           <div class="skillbar" data-percent="80%">
             <div class="skillbar-title" style="background: #ff9900;"><span>PHP</span></div>
             <div class="skillbar-bar" style="background: #ff9900;"></div>
             <div class="skill-bar-percent">80%</div>
-          </div> <!-- Ende Skill Bar -->
+          </div> 
 
           <div class="skillbar" data-percent="80%">
             <div class="skillbar-title" style="background: #33cc33;"><span>Yii2</span></div>
             <div class="skillbar-bar" style="background: #33cc33;"></div>
             <div class="skill-bar-percent">80%</div>
-          </div> <!-- Ende Skill Bar -->
+          </div> 
 
           <div class="skillbar" data-percent="80%">
             <div class="skillbar-title" style="background: #1a1aff;"><span>Wordpress</span></div>
             <div class="skillbar-bar" style="background: #1a1aff;"></div>
             <div class="skill-bar-percent">80%</div>
-          </div> <!-- Ende Skill Bar -->
+          </div> 
 
         </div>
-        <!-- END- SKILLS -->
       </div>
 
     </div>
-
   </section>
 
   <div id="section4" >
@@ -308,8 +305,6 @@
     <div class="techologies_background">
       <div class="techologies_wrapper">
 
-
-
         <div class="techologies_image_holder">
           <img src="img/php.png" alt="php">
         </div>
@@ -362,31 +357,28 @@
           <p>support@alonso.com</p>
         </div>
 
-
-
-
         <form class="contact_form" action="#section6" method="post" id="cf">
           <?php  if ($result): ?>
-                              <p>Message sent! We reply on specified email. Thank you.</p>
-                          <?php else: ?>
-                              <?php if (isset($errors) && is_array($errors)): ?>
-                                  <ul>
-                                      <?php foreach ($errors as $error): ?>
-                                          <li> - <?php echo $error; ?></li>
-                                      <?php endforeach; ?>
-                                  </ul>
-                              <?php endif; ?>
-          <div class="name_email_subject">
+            <p>Message sent! We reply on specified email. Thank you.</p>
+            <?php else: ?>
+              <?php if (isset($errors) && is_array($errors)): ?>
+              <ul>
+                <?php foreach ($errors as $error): ?>
+                  <li> - <?php echo $error; ?></li>
+                <?php endforeach; ?>
+              </ul>
+            <?php endif; ?>
+            <div class="name_email_subject">
 
-            <input type="text" name="userName" value="<?php echo $userName; ?>" placeholder="Name">
-            <input type="text" name="userSubject" value="<?php echo $userSubject; ?>" placeholder="Subject">
-            <input type="email" name="userEmail" value="<?php echo $userEmail; ?>" placeholder="Email">
-          </div>
+              <input type="text" name="userName" value="<?php echo $userName; ?>" placeholder="Name">
+              <input type="text" name="userSubject" value="<?php echo $userSubject; ?>" placeholder="Subject">
+              <input type="email" name="userEmail" value="<?php echo $userEmail; ?>" placeholder="Email">
+            </div>
 
-          <div class="message">
-            <input type="text" name="userText" value="<?php echo $userText; ?>" placeholder="Message">
-          </div>
-          <input type="submit" name="submit" value="Submit">
+            <div class="message">
+              <input type="text" name="userText" value="<?php echo $userText; ?>" placeholder="Message">
+            </div>
+            <input type="submit" name="submit" value="Submit">
           <?php endif; ?>
         </form>
 
@@ -423,9 +415,7 @@
     </script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-
     <script type="text/javascript" src="js/main.js">
-
     </script>
   </body>
   </html>

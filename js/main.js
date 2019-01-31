@@ -19,11 +19,6 @@ $( document ).ready( function() {
     	$('.navbar-collapse').collapse('hide');
     });
 
-  // Activate scrollspy to add active class to navbar items on scroll
-//  $('body').scrollspy({
-//  	target: '#mainNav',
-//  });
-
   // Collapse Navbar
   var navbarCollapse = function() {
   	if ($("#mainNav").offset().top > 100) {
@@ -86,8 +81,6 @@ if($('section[data-type="background"]').length){
 		});
 	});
 }
-
-
 });
 
 // Modal images
