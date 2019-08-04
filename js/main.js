@@ -43,6 +43,7 @@ $(document).on('scroll', function(){
 	}
 });
 
+//Isotope
 var $grid = $('.portfolio_container').isotope({
 	itemSelector: '.portfolio_item',
 	stagger: 30
@@ -81,6 +82,13 @@ if($('section[data-type="background"]').length){
 		});
 	});
 }
+
+$.ajax({
+method: "POST",
+url: "ajaxform.php",
+data: {name: name, subject:subject, email:email, message:message}
+});
+
 });
 
 // Modal images

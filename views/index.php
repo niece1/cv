@@ -357,7 +357,7 @@
           <p>support@alonso.com</p>
         </div>
 
-        <form class="contact_form" action="#section6" method="post" id="cf">
+        <form class="contact_form" action="#" method="post" id="cf">
           <?php  if ($result): ?>
             <p>Message sent! We reply on specified email. Thank you.</p>
             <?php else: ?>
