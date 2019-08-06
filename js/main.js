@@ -83,11 +83,7 @@ if($('section[data-type="background"]').length){
 	});
 }
 
-$.ajax({
-method: "POST",
-url: "ajaxform.php",
-data: {name: name, subject:subject, email:email, message:message}
-});
+
 
 });
 
