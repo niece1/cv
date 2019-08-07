@@ -37,3 +37,9 @@ public static function checkMessage($userText)
 return false;
 }
 }
+$data = [
+	'userName' =>$_POST['userName'],
+	'userSubject' =>$_POST['userSubject'],
+	'userEmail' =>$_POST['userEmail'],
+	'userText' =>$_POST['userText'],
+];

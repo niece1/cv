@@ -83,7 +83,26 @@ if($('section[data-type="background"]').length){
 	});
 }
 
+// Ajax form send
+$(#form_button).on('click', function(){
+	var nameValue = $('input.userName').val();
+	var subjectValue = $('input.userSubject').val();
+	var emailValue = $('input.userEmail').val();
+	var messageValue = $('input.userText').val();
 
+	$.ajax({
+  method: "POST",
+  url: "Contact.php",
+  data: { userName: nameValue, userSubject: subjectValue, userEmail: emailValue, userText: messageValue }
+});
+  .done(function(  ) {
+   // alert( "Data Saved: " + msg );
+  });
+  $('input.userName').val('');
+  $('input.userSubject').val('');
+  $('input.userEmail').val('');
+  $('input.userText').val('');
+});
 
 });
 
