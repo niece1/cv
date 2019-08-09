@@ -83,26 +83,7 @@ if($('section[data-type="background"]').length){
 	});
 }
 
-// Ajax form send
-$(#form_button).on('click', function(){
-	var nameValue = $('input.userName').val();
-	var subjectValue = $('input.userSubject').val();
-	var emailValue = $('input.userEmail').val();
-	var messageValue = $('input.userText').val();
 
-	$.ajax({
-  method: "POST",
-  url: "Contact.php",
-  data: { userName: nameValue, userSubject: subjectValue, userEmail: emailValue, userText: messageValue }
-});
-  .done(function(  ) {
-   // alert( "Data Saved: " + msg );
-  });
-  $('input.userName').val('');
-  $('input.userSubject').val('');
-  $('input.userEmail').val('');
-  $('input.userText').val('');
-});
 
 });
 
@@ -126,3 +107,40 @@ for (i = 0; i < images.length; i++) {
 		captionText.innerHTML = this.alt;
 	};
 }
+
+(function ($) {
+    'use strict';
+    var form = $('.contact__form'),
+        message = $('.contact__msg'),
+        form_data;
+    // Success function
+    function done_func(response) {
+        message.fadeIn().removeClass('alert-danger').addClass('alert-success');
+        message.text(response);
+        setTimeout(function () {
+            message.fadeOut();
+        }, 2000);
+        form.find('input:not([type="submit"]), textarea').val('');
+    }
+    // fail function
+    function fail_func(data) {
+        message.fadeIn().removeClass('alert-success').addClass('alert-success');
+        message.text(data.responseText);
+        setTimeout(function () {
+            message.fadeOut();
+        }, 2000);
+    }
+    
+    form.submit(function (e) {
+        e.preventDefault();
+        form_data = $(this).serialize();
+        $.ajax({
+            type: 'POST',
+            url: form.attr('action'),
+            data: form_data
+        })
+        .done(done_func)
+        .fail(fail_func);
+    });
+    
+})(jQuery);

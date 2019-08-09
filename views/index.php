@@ -357,30 +357,41 @@
           <p>support@alonso.com</p>
         </div>
 
-        <form class="contact_form" action="" method="post" id="cf">
-          <?php  if ($result): ?>
-            <p>Message sent! We reply on specified email. Thank you.</p>
-            <?php else: ?>
-              <?php if (isset($errors) && is_array($errors)): ?>
-              <ul>
-                <?php foreach ($errors as $error): ?>
-                  <li> - <?php echo $error; ?></li>
-                <?php endforeach; ?>
-              </ul>
-            <?php endif; ?>
-            <div class="name_email_subject">
-
-              <input type="text" name="userName" value="<?php echo $userName; ?>" placeholder="Name">
-              <input type="text" name="userSubject" value="<?php echo $userSubject; ?>" placeholder="Subject">
-              <input type="email" name="userEmail" value="<?php echo $userEmail; ?>" placeholder="Email">
+        <!-- Starting of ajax contact form -->
+<form class="contact__form" method="post" action="mail.php">
+    <!-- Starting of successful form message -->
+    <div class="row">
+        <div class="col-12">
+            <div class="alert alert-success contact__msg" style="display: none" role="alert">
+                Your message was sent successfully.
             </div>
+        </div>
+    </div>
+    <!-- Ending of successful form message -->
 
-            <div class="message">
-              <input type="text" name="userText" value="<?php echo $userText; ?>" placeholder="Message">
-            </div>
-            <input id="form_button" type="submit" name="submit" value="Submit">
-          <?php endif; ?>
-        </form>
+    <!-- Element of the ajax contact form -->
+    <div class="row">
+        <div class="col-md-6 form-group">
+            <input name="name" type="text" class="form-control" placeholder="Name" required>
+        </div>
+        <div class="col-md-6 form-group">
+            <input name="email" type="email" class="form-control" placeholder="Email" required>
+        </div>
+        <div class="col-md-6 form-group">
+            <input name="phone" type="text" class="form-control" placeholder="Phone" required>
+        </div>
+        <div class="col-md-6 form-group">
+            <input name="subject" type="text" class="form-control" placeholder="Subject" required>
+        </div>
+        <div class="col-12 form-group">
+            <textarea name="message" class="form-control" rows="3" placeholder="Message" required></textarea>
+        </div>
+        <div class="col-12">
+            <input name="submit" type="submit" class="btn btn-success" value="Send Message">
+        </div>
+    </div>
+</form>
+<!-- Ending of ajax contact form -->
 
       </div>
     </section>
