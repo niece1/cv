@@ -358,38 +358,37 @@
         </div>
 
         <!-- Starting of ajax contact form -->
-<form class="contact__form" method="post" action="mail.php">
+<form class="contact_form" method="post" action="mail.php">
     <!-- Starting of successful form message -->
-    <div class="row">
-        <div class="col-12">
+    
             <div class="alert alert-success contact__msg" style="display: none" role="alert">
                 Your message was sent successfully.
             </div>
-        </div>
-    </div>
+      
     <!-- Ending of successful form message -->
 
     <!-- Element of the ajax contact form -->
-    <div class="row">
-        <div class="col-md-6 form-group">
-            <input name="name" type="text" class="form-control" placeholder="Name" required>
+    
+        <div class="name_email_subject">
+            <input name="name" type="text" placeholder="Name" required>
+        </div>        
+        
+        <div class="name_email_subject">
+            <input name="subject" type="text" placeholder="Subject" required>
         </div>
-        <div class="col-md-6 form-group">
-            <input name="email" type="email" class="form-control" placeholder="Email" required>
+
+        <div class="name_email_subject">
+            <input name="email" type="email" placeholder="Email" required>
         </div>
-        <div class="col-md-6 form-group">
-            <input name="phone" type="text" class="form-control" placeholder="Phone" required>
+
+        <div class="message">
+            <input name="message" placeholder="Message" required>
         </div>
-        <div class="col-md-6 form-group">
-            <input name="subject" type="text" class="form-control" placeholder="Subject" required>
-        </div>
-        <div class="col-12 form-group">
-            <textarea name="message" class="form-control" rows="3" placeholder="Message" required></textarea>
-        </div>
-        <div class="col-12">
-            <input name="submit" type="submit" class="btn btn-success" value="Send Message">
-        </div>
-    </div>
+
+       
+            <input name="submit" type="submit" value="Send">
+       
+  
 </form>
 <!-- Ending of ajax contact form -->
 
