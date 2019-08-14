@@ -9,52 +9,35 @@ class SiteController
      */
     public function actionIndex()
     {
-      // Form variables
-      $userName = false;
-      $userEmail = false;
-      $userSubject = false;
-      $userText = false;
-      $result = false;
+              # Mail Content
+        $content = "Name: $name\n";
+        $content .= "Email: $email\n\n";
+        $content .= "Phone: $phone\n";
+        $content .= "Message:\n$message\n";
 
-            // Form's error processing
-      if (isset($_POST['submit'])) {
-                // If form sent
-                // Fetch form data
-        $userName = $_POST['userName'];
-        $userSubject = $_POST['userSubject'];
-        $userEmail = $_POST['userEmail'];
-        $userText = $_POST['userText'];
-                // Error flag
-        $errors = false;
+        // email headers.
+        $headers = "From: $name &lt;$email&gt;";
 
-                // Fields validation
-        if (!Contact::checkName($userName)) {
-            $errors[] = 'Name must consist of at least two letters';
-        }
-        if (!Contact::checkSubject($userSubject)) {
-            $errors[] = 'Subject cannot be empty';
-        }
-        if (!Contact::checkEmail($userEmail)) {
-            $errors[] = 'Incorrect email';
+        // Send the email.
+        $success = mail($mail_to, $subject, $content, $headers);
+        if ($success) {
+            // Set a 200 (okay) response code.
+            http_response_code(200);
+            echo "Thank You! Your message has been sent.";
+        } else {
+            // Set a 500 (internal server error) response code.
+            http_response_code(500);
+            echo "Oops! Something went wrong, we couldn't send your message.";
         }
 
-
-        if (!Contact::checkMessage($userText)) {
-            $errors[] = 'Message cannot be empty';
+         else {
+            // Not a POST request, set a 403 (forbidden) response code.
+            http_response_code(403);
+            echo "There was a problem with your submission, please try again.";
         }
-        if ($errors == false) {
-                // If there are no errors
-                // Send email to admin
-            $adminEmail = 'niece@ukr.net';
-            $message = "Name: {$userName}. Subject: {$userSubject}. Message: {$userText}. From {$userEmail}";
-            $subject = 'Mail subject';
-            $result = mail($adminEmail, $subject, $message);
-            $result = true;
-
-        }
-    }
+  
         // View connect
     require_once(ROOT . '/views/index.php');
-    return true;
+    
     }
 }
