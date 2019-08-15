@@ -110,8 +110,8 @@ for (i = 0; i < images.length; i++) {
 
 (function ($) {
     'use strict';
-    var form = $('.contact__form'),
-        message = $('.contact__msg'),
+    var form = $('.contact_form'),
+        message = $('.contact_msg'),
         form_data;
     // Success function
     function done_func(response) {

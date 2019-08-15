@@ -361,7 +361,7 @@
 <form class="contact_form" method="post" action="mail.php">
     <!-- Starting of successful form message -->
     
-            <div class="alert alert-success contact__msg" style="display: none" role="alert">
+            <div class="alert alert-success contact_msg" style="display: none" role="alert">
                 Your message was sent successfully.
             </div>
       
