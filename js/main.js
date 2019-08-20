@@ -110,9 +110,10 @@ for (i = 0; i < images.length; i++) {
 
 (function ($) {
     'use strict';
-    var form = $('.contact_form'),
+   
+ var form = $('.contact_form'),
         message = $('.contact_msg'),
-        form_data;
+       form_data;
     // Success function
     function done_func(response) {
         message.fadeIn().removeClass('alert-danger').addClass('alert-success');

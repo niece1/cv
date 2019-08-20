@@ -28,6 +28,7 @@ public static function checkEmail()
         $content .= "Phone: $phone\n";
         $content .= "Message:\n$message\n";
 
+        
         // email headers.
         $headers = "From: $name &lt;$email&gt;";
 
