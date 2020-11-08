@@ -1,3 +1,4 @@
+import easing from './jquery.easing';
 $( document ).ready( function() {
 
   // Smooth scrolling using jQuery easing

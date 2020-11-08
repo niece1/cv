@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Models;
+
 public static function checkEmail()
 {
 
