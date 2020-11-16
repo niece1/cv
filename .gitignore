@@ -1,5 +1,4 @@
 node_modules/
-images/
-package-lock.json
-img/
-/vendor/
+vendor/
+resources/images/
+public/dist/images/
