@@ -1,7 +1,6 @@
-/*!
- * Alonso - Creative v1.0.0 (https://github.com/)
- * Copyright 2019 Volodymyr Zhonchuk
- */
+@import "~bootstrap/scss/bootstrap";
+@import "_roboto.css";
+@import "_rubik.css";
 
  * {
    margin: 0;
@@ -69,9 +68,9 @@ p {
 
  a.logo {
    color: rgb(17, 50, 93) !important;
-   font-size: 4.5rem;
+   font-size: 3.5rem;
    padding-left: 30px;
-   font-family: 'Oswald', sans-serif;
+   font-family: 'Open Sans', sans-serif;
  }
 
  nav {
@@ -497,7 +496,7 @@ button.navbar-toggler {
        }
      }
    }
-   .portfolio_container {
+   .portfolio {
      width: 100%;
      margin: auto;
      .portfolio_item {
@@ -514,7 +513,7 @@ button.navbar-toggler {
          width: 100%;
          height: auto;
          transition: transform 500ms ease-out;
-
+        
          &:hover {
            transform: scale(1.15);
          }
@@ -569,7 +568,7 @@ button.navbar-toggler {
   to {transform:scale(1)}
 }
 
-.close {
+#close {
   position: absolute;
   top: 15px;
   right: 35px;
@@ -579,7 +578,7 @@ button.navbar-toggler {
   transition: 0.3s;
 }
 
-.close:hover, .close:focus {
+#close:hover, #close:focus {
   color: #59c383;
   text-decoration: none;
   cursor: pointer;
@@ -636,7 +635,7 @@ button.navbar-toggler {
 .techologies {
   width: 100%;
   min-height: 250px;
-  background-image: url(../img/desk.jpg);
+  background-image: url(./../images/desk.jpeg);
   background-position: center;
   background-attachment: fixed;
   position: relative;

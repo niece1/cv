@@ -1,29 +1,22 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto|Rubik" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/main.css">
-
+  <link rel="stylesheet" href="dist/css/app.css">
   <title>Alonso, web developer</title>
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="80">
 
+<body data-spy="scroll" data-target=".navbar" data-offset="80">
+  <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <!-- Brand -->
-    <a class="navbar-brand logo js-scroll-trigger" href="#section1">Alonso</a>
-
+    <a class="navbar-brand logo js-scroll-trigger" href="#section1">Noa</a>
     <!-- Toggler/collapsibe Button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
-
     <!-- Navbar links -->
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav ml-auto">
@@ -48,12 +41,10 @@
       </ul>
     </div>
   </nav>
-
+  <!-- Parallax -->
   <section id="section1"  class="parallax">
-
     <figure>
-      <img src="img/denim.jpg" alt="green">
-
+      <img src="dist/images/denim.jpeg" alt="background">
       <figcaption>
         <h2>Alonso Media. Deserve a better code</h2>
         <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quas aspernatur libero sint ratione facilis iste et! Eligendi, nesciunt, cumque?</h6>
@@ -61,15 +52,13 @@
         <a href="#section6" class="contact_me_link js-scroll-trigger">Contact me</a>
       </figcaption>
     </figure>
-
   </section>
-
+  <!-- Advantages -->
   <section id="section2" class="container-fluid">
     <div class="introadvantages">
       <h3>Create better with Alonso</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quas aspernatur libero sint ratione facilis iste et! Eligendi, nesciunt, cumque?</p>
     </div>
-
     <div class="advantages-wrapper">
       <div class="left_advantage">
         <div class="advantage_item">
@@ -79,7 +68,7 @@
           </div>
           <div class="advantage_icon">
             <figure>
-              <img src="img/responsive.png" alt="">
+              <img src="dist/images/responsive.png" alt="">
             </figure>
           </div>
         </div>
@@ -90,7 +79,7 @@
           </div>
           <div class="advantage_icon">
             <figure>
-              <img src="img/hourglass.png" alt="">
+              <img src="dist/images/hourglass.png" alt="">
             </figure>
           </div>
         </div>
@@ -101,21 +90,19 @@
           </div>
           <div class="advantage_icon">
             <figure>
-              <img src="img/customer-support.png" alt="">
+              <img src="dist/images/customer-support.png" alt="">
             </figure>
           </div>
         </div>
       </div>
-
       <div class="advantage_portrait">
-        <img src="img/businessman.jpg" alt="">
+        <img src="dist/images/developer.jpeg" alt="">
       </div>
-
       <div class="right_advantage">
         <div class="advantage_item">
           <div class="advantage_icon">
             <figure>
-              <img src="img/innovation.png" alt="">
+              <img src="dist/images/innovation.png" alt="">
             </figure>
           </div>
           <div class="advantage_text">
@@ -126,7 +113,7 @@
         <div class="advantage_item">
           <div class="advantage_icon">
             <figure>
-              <img src="img/layers.png" alt="">
+              <img src="dist/images/layers.png" alt="">
             </figure>
           </div>
           <div class="advantage_text">
@@ -137,7 +124,7 @@
         <div class="advantage_item">
           <div class="advantage_icon">
             <figure>
-              <img src="img/settings.png" alt="">
+              <img src="dist/images/settings.png" alt="">
             </figure>
           </div>
           <div class="advantage_text">
@@ -148,16 +135,13 @@
       </div>
     </div>
   </section>
-
+  <!-- Skillbar -->
   <section id="section3">
-
     <div class="skills_wrapper">
       <div class="skills_image">
-        <img src="img/skills.jpg" alt="skills">
+        <img src="dist/images/skills.jpeg" alt="skills">
       </div>
-
       <div class="skills_right">
-     
         <div id="skills" class="skillbar-wrapper">
           <h4>Skills & Expertise</h4>
           <div class="skillbar" data-percent="70%">
@@ -165,181 +149,140 @@
             <div class="skillbar-bar" style="background: #DD1E2F;"></div>
             <div class="skill-bar-percent">70%</div>
           </div> 
-
           <div class="skillbar" data-percent="55%">
             <div class="skillbar-title" style="background: #ffff00;"><span>CSS</span></div>
             <div class="skillbar-bar" style="background: #ffff00;"></div>
             <div class="skill-bar-percent">55%</div>
           </div> 
-
           <div class="skillbar" data-percent="60%">
-            <div class="skillbar-title" style="background: #06A2CB;"><span>jQuery</span></div>
+            <div class="skillbar-title" style="background: #06A2CB;"><span>PHP</span></div>
             <div class="skillbar-bar" style="background: #06A2CB;"></div>
             <div class="skill-bar-percent">60%</div>
           </div> 
-
           <div class="skillbar" data-percent="55%">
             <div class="skillbar-title" style="background: #218559;"><span>VueJs</span></div>
             <div class="skillbar-bar" style="background: #218559;"></div>
             <div class="skill-bar-percent">55%</div>
           </div> 
-
           <div class="skillbar" data-percent="80%">
-            <div class="skillbar-title" style="background: #ff9900;"><span>PHP</span></div>
+            <div class="skillbar-title" style="background: #ff9900;"><span>AWS</span></div>
             <div class="skillbar-bar" style="background: #ff9900;"></div>
             <div class="skill-bar-percent">80%</div>
           </div> 
-
           <div class="skillbar" data-percent="80%">
-            <div class="skillbar-title" style="background: #33cc33;"><span>Yii2</span></div>
+            <div class="skillbar-title" style="background: #33cc33;"><span>Linux</span></div>
             <div class="skillbar-bar" style="background: #33cc33;"></div>
             <div class="skill-bar-percent">80%</div>
           </div> 
-
           <div class="skillbar" data-percent="80%">
-            <div class="skillbar-title" style="background: #1a1aff;"><span>Wordpress</span></div>
+            <div class="skillbar-title" style="background: #1a1aff;"><span>Laravel</span></div>
             <div class="skillbar-bar" style="background: #1a1aff;"></div>
             <div class="skill-bar-percent">80%</div>
           </div> 
-
         </div>
       </div>
-
     </div>
   </section>
-
-  <div id="section4" >
-
+  <!-- Recent works -->
+  <section id="section4" >
     <h3>Recent works</h3>
     <div class="filters filter_button_group">
       <ul>
-
-        <li class="active" data-filter="*">All projects</li>
+        <li data-filter='*'>All projects</li>
         <li data-filter=".metal">Wordpress/Woocommerce</li>
         <li data-filter=".transition">Yii2</li>
         <li data-filter=".alkali">VueJs</li>
       </ul>
     </div>
-
-    <div class="portfolio_container" >
-
+    <div class="portfolio" >
       <div class="portfolio_item metal">
-        <img src="img/mobile.jpg" class="modal_image" alt="board">
+        <img src="dist/images/mobile.jpeg" class="modal_image" alt="board">
       </div>
-
       <div class="portfolio_item alkali">
-        <img src="img/startup.jpg" class="modal_image" alt="board">
+        <img src="dist/images/startup.jpeg" class="modal_image" alt="board">
       </div>
-
       <div class="portfolio_item metal">
-        <img src="img/computer1.jpg" class="modal_image" alt="board">
+        <img src="dist/images/computer1.jpeg" class="modal_image" alt="board">
       </div>
-
       <div class="portfolio_item transition">
-        <img src="img/computer.jpg" class="modal_image" alt="board">
+        <img src="dist/images/computer.jpeg" class="modal_image" alt="board">
       </div>
-
       <div class="portfolio_item alkali">
-        <img src="img/students.jpg" class="modal_image" alt="board">
+        <img src="dist/images/students.jpeg" class="modal_image" alt="board">
       </div>
-
       <div class="portfolio_item transition">
-        <img src="img/student1.jpg" class="modal_image" alt="board">
+        <img src="dist/images/student1.jpeg" class="modal_image" alt="board">
       </div>
-
       <div class="portfolio_item alkali">
-        <img src="img/student.jpg" class="modal_image" alt="laptop">
+        <img src="dist/images/student.jpeg" class="modal_image" alt="laptop">
       </div>
-
       <div class="portfolio_item transition">
-        <img src="img/online.jpg" class="modal_image" alt="board">
+        <img src="dist/images/online.jpeg" class="modal_image" alt="board">
       </div>
-
     </div>
-  </div>
-
+  </section>
   <!-- The Modal -->
   <div id="portfolioModal" class="modal">
-    <span class="close">&times;</span>
+    <span id="close">&times;</span>
     <img class="modal-content" id="img01">
     <div id="caption"></div>
   </div>
-
+  <!-- Testimonials -->
   <section id="section5" class="container-fluid testimonials">
     <div class="testimonials_wrapper">
       <h3>Testimonials</h3>
-
       <div id="demo" class="carousel slide" data-ride="carousel">
-
         <div class="carousel-inner testimonials_holder">
-
           <div class="testimonial_item carousel-item active">
-            <img src="img/girl.jpg" alt="testimonial">
-
+            <img src="dist/images/girl.jpeg" alt="testimonial">
             <p>Morbi accumsan ipsum velit nam nec tellus a odiose tincidunt auctor a ornare odio sed non mauris vitae erat consequat auctor accumsan ipsum velit nam nec tellus a odiose tincidunt auctor a ornare odio sed non mauris vitae erat consequat</p>
             <h6>Julia Owen</h6>
-
           </div>
-
           <div class="testimonial_item carousel-item">
-            <img src="img/woman.jpg" alt="testimonial">
-
+            <img src="dist/images/woman.jpeg" alt="testimonial">
             <p>Morbi accumsan ipsum velit nam nec tellus a odiose tincidunt auctor a ornare odio sed non mauris vitae erat consequat auctor accumsan ipsum velit nam nec tellus a odiose tincidunt auctor a ornare odio sed non mauris vitae erat consequat</p>
             <h6>Nancy Jefferson</h6>
-
           </div>
-
           <div class="testimonial_item carousel-item">
-            <img src="img/teenager.jpg" alt="testimonial">
-
+            <img src="dist/images/teenager.jpeg" alt="testimonial">
             <p>Morbi accumsan ipsum velit nam nec tellus a odiose tincidunt auctor a ornare odio sed non mauris vitae erat consequat auctor accumsan ipsum velit nam nec tellus a odiose tincidunt auctor a ornare odio sed non mauris vitae erat consequat</p>
             <h6>Amanda Freeman</h6>
-
           </div>
         </div>
       </div>
     </div>
   </section>
-
+  <!-- Techologies -->
   <section id="section6" class="techologies" data-type="background">
     <div class="techologies_background">
       <div class="techologies_wrapper">
-
         <div class="techologies_image_holder">
-          <img src="img/php.png" alt="php">
+          <img src="dist/images/php.png" alt="php">
         </div>
-
         <div class="techologies_image_holder">
-          <img src="img/vue.png" alt="vue">
+          <img src="dist/images/vue.png" alt="vue">
         </div>
-
         <div class="techologies_image_holder">
-          <img src="img/yii.png" alt="yii">
+          <img src="dist/images/laravel.png" alt="laravel">
         </div>
-
         <div class="techologies_image_holder">
-          <img src="img/docker.png" alt="docker">
+          <img src="dist/images/docker.png" alt="docker">
         </div>
-
         <div class="techologies_image_holder">
-          <img src="img/wordpress.png" alt="wordpress">
+          <img src="dist/images/webpack.png" alt="webpack">
         </div>
-
         <div class="techologies_image_holder">
-          <img src="img/woocommerce.png" alt="woocommerce">
+          <img src="dist/images/aws.png" alt="aws">
         </div>
-
         <div class="techologies_image_holder">
-          <img src="img/gulp.png" alt="gulp">
+          <img src="dist/images/gulp.png" alt="gulp">
         </div>
-
         <div class="techologies_image_holder">
-          <img src="img/vagrant.png" alt="vagrant">
+          <img src="dist/images/mysql.png" alt="mysql">
         </div>
-
       </div>
     </section>
-
+    <!-- Contact -->
     <section class="contact">
       <div class="contact-wrapper">
         <div class="contact_details">
@@ -355,76 +298,62 @@
           <h6>Email</h6>
           <p>contact@alonso.com</p>
           <p>support@alonso.com</p>
-        </div>
-
-        <!-- Starting of ajax contact form -->
-<form class="contact_form" method="post" action="mail.php">
-    <!-- Starting of successful form message -->
-    
-            <div class="alert alert-success contact_msg" style="display: none" role="alert">
-                Your message was sent successfully.
-            </div>
-      
-    <!-- Ending of successful form message -->
-
-    <!-- Element of the ajax contact form -->
-    
-        <div class="name_email_subject">
+        </div>       
+        <form class="contact_form" method="post" action="mail.php">
+          <div class="alert alert-success contact_msg" style="display: none" role="alert">
+            Your message was sent successfully.
+          </div>
+          <div class="name_email_subject">
             <input name="name" type="text" placeholder="Name" required>
-        </div>        
-        
-        <div class="name_email_subject">
+          </div>        
+          <div class="name_email_subject">
             <input name="subject" type="text" placeholder="Subject" required>
-        </div>
-
-        <div class="name_email_subject">
+          </div>
+          <div class="name_email_subject">
             <input name="email" type="email" placeholder="Email" required>
-        </div>
-
-        <div class="message">
+          </div>
+          <div class="message">
             <input name="message" placeholder="Message" required>
-        </div>
-
-       
-            <input name="submit" type="submit" value="Send">
-       
-  
-</form>
-<!-- Ending of ajax contact form -->
-
+          </div>
+          <input name="submit" type="submit" value="Send">
+        </form>
       </div>
     </section>
-
+    <!-- Footer -->
     <footer>
-
       <div class="footer_wrapper">
-
         <div class="copyright">
-          <p>&copy;Alonso. All rights reserved. <?php echo date("Y"); ?></p>
+          <p>&copy;Noa. All rights reserved. <?php echo date("Y"); ?></p>
         </div>
-
         <div class="social">
-          <a href="http://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
           <a href="http://www.twitter.com"><i class="fab fa-twitter"></i></a>
-          <a href="http://www.codepen.com"><i class="fab fa-codepen"></i></a>
           <a href="http://www.github.com"><i class="fab fa-github"></i></a>
         </div>
-
         <div class="button_up">
           <a href="#section1" class="btn-up js-scroll-trigger">Back to top<i class="fas fa-angle-up"></i></a>
         </div>
-
       </div>
     </footer>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <!--<script type="text/javascript" src="js/jquery.easing.js"></script>-->
+    <!-- For Webpack PurgeCSSPlugin -->
+    <span class="navbar-shrink"></span>
+    <!-- JS -->
+    <script type="text/javascript" src="dist/app.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/main.js">
+    <script type="text/javascript">
+      let grid = new Isotope('.portfolio', {
+        itemSelector: '.portfolio_item',
+        stagger: 30
+      });
+      let filterBtn = document.querySelectorAll('.filter_button_group li');
+      for (let i = 0; i < filterBtn.length; i++) {
+        filterBtn[i].onclick = function (click) {
+          click.preventDefault();
+          let filterData = event.target.getAttribute('data-filter');
+          grid.arrange({
+            filter: filterData
+          });
+        };
+      }
     </script>
   </body>
   </html>

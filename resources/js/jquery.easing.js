@@ -5,6 +5,7 @@
  * All rights reserved.
  * https://raw.github.com/gdsmith/jquery-easing/master/LICENSE
 */
+
 export default
 (function (factory) {
 	if (typeof define === "function" && define.amd) {
