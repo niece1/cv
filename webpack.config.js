@@ -4,10 +4,13 @@ let glob = require('glob')
 let MiniCssExtractPlugin = require('mini-css-extract-plugin')
 let PurgeCSSPlugin = require('purgecss-webpack-plugin')
 let ImageMinimizerPlugin = require('image-minimizer-webpack-plugin')
+let {VueLoaderPlugin} = require('vue-loader')
+
 let PATHS = {
 	src: path.join(__dirname, 'views')
 }
 let {CleanWebpackPlugin} = require('clean-webpack-plugin')
+
 module.exports = {
 	context: path.resolve(__dirname, 'resources'),
 	mode: 'development',
@@ -34,11 +37,22 @@ module.exports = {
 				}
 			},
 			{
-				test: /\.s[ac]ss$/,
+				test: /\.vue$/,
+				loader: 'vue-loader'
+			},
+			{
+				test: /\.css$/,
 				use: [
+				'style-loader',
+				'css-loader'
+				]
+			},
+			{
+				test: /\.s[ac]ss$/,
+				use: [				
 				{ 
 					loader: MiniCssExtractPlugin.loader,
-				}, 
+				}, 	
 				{
 					loader: 'css-loader',
 					options: { 
@@ -75,6 +89,11 @@ module.exports = {
   }
   ]
 },
+resolve: {
+	alias: {
+		'vue$': 'vue/dist/vue.common.js'
+	}
+},
 plugins: [
 new MiniCssExtractPlugin({
 	filename: 'css/[name].css'
@@ -104,6 +123,7 @@ new webpack.ProvidePlugin({
 	$: "jquery",
 	jQuery: "jquery"
 }),
-new CleanWebpackPlugin()
+new CleanWebpackPlugin(),
+new VueLoaderPlugin()
 ],
 };

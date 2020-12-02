@@ -298,7 +298,7 @@
           <h6>Email</h6>
           <p>contact@alonso.com</p>
           <p>support@alonso.com</p>
-        </div>       
+        </div>              
         <form class="contact_form" method="post" action="mail.php">
           <div class="alert alert-success contact_msg" style="display: none" role="alert">
             Your message was sent successfully.
@@ -334,6 +334,9 @@
         </div>
       </div>
     </footer>
+    <div id="app">
+      <contact-form></contact-form>
+    </div>
     <!-- For Webpack PurgeCSSPlugin -->
     <span class="navbar-shrink"></span>
     <!-- JS -->
