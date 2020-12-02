@@ -1,4 +1,5 @@
 // Modal images
+
 var modal = document.getElementById("portfolioModal");
 var span = document.getElementById("close");
 span.onclick = function() {
